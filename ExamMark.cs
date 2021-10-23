@@ -1,4 +1,4 @@
-using System;
+using System;///call lib 
 class ExamMark{
     static void Main(){
         int[,] marksArray=new int[4,6];
