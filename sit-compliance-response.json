@@ -1,0 +1,1562 @@
+{
+    "customerId": "06c833ad-1be3-445c-bcf0-9ed81a6e65d0",
+    "inquiryTime": "2021-10-27T09:58:51.3948534Z",
+    "inquiryTimeMinute": 598,
+    "errorStatus": null,
+    "parkingArea": [
+        {
+            "parkingAreaId": "a9df1b8b-2f14-4a47-8b9b-49c82e1ce61e",
+            "parkingSpaces": [
+                {
+                    "bdd": null,
+                    "continue": "no",
+                    "spaceId": "1000280010400680001",
+                    "complianceStatus": "Vacant",
+                    "detail": {
+                        "occupancy": {
+                            "occupancyDateTime": "2021-10-25T22:30:12.0390000",
+                            "occupancyStatus": "Vacant",
+                            "occupancyTs": "1635201012039",
+                            "occupancyInTime": null,
+                            "occupancyDetail": {
+                                "statusCode": 200,
+                                "url": "https://sit-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/comocc/cid/28/sid/1000280010400680001.json?APIMSubscriptionKey=fb901b49b22641af9357c14e177a99f4",
+                                "requestTime": "2021-10-27T09:58:51.7870957Z",
+                                "responseTime": "2021-10-27T09:58:57.0454010Z",
+                                "response": {
+                                    "PEMS": {
+                                        "occupancy": {
+                                            "customer": [
+                                                {
+                                                    "cid": "28",
+                                                    "area": [
+                                                        {
+                                                            "aid": "100",
+                                                            "meter": [
+                                                                {
+                                                                    "mid": "40068",
+                                                                    "space": [
+                                                                        {
+                                                                            "psid": "1000280010400680001",
+                                                                            "occupancyStatus": {
+                                                                                "osId": 2,
+                                                                                "osTs": 1635201012039,
+                                                                                "expiryTs": null
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "complianceCheckStatus": "Vacant"
+                        },
+                        "payment": {
+                            "paymentDetail": {
+                                "statusCode": 200,
+                                "url": "https://apim-pems-shared-sit.azure-api.net/qpl/payment/lookup?cid=z97Zl2t52Qg&code=comsecret&spaceId=1000280010400680001&key=321e242742e243c0860e69b5311ad20c",
+                                "requestTime": "2021-10-27T09:58:51.7577856Z",
+                                "responseTime": "2021-10-27T09:58:52.5284990Z",
+                                "response": {
+                                    "customerId": "z97Zl2t52Qg",
+                                    "lpn": "1000280010400680001",
+                                    "spaceId": null,
+                                    "startTime": null,
+                                    "endTime": null,
+                                    "paidDuration": 0,
+                                    "zoneId": null,
+                                    "zoneName": null,
+                                    "meterId": null,
+                                    "meterName": null,
+                                    "parkingAreaName": null,
+                                    "permits": null
+                                }
+                            },
+                            "paymentStartTime": null,
+                            "paymentEndTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "clearPin": {
+                            "clearPinDateTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "regulatedSchedule": {
+                            "tariffDetail": {
+                                "tariff": {
+                                    "parkingAreaId": "a9df1b8b-2f14-4a47-8b9b-49c82e1ce61e",
+                                    "parkingAreaName": "IAW1",
+                                    "tariffAreaId": "5faaf7c8-62ff-4599-bb78-78412a187142",
+                                    "tariffAreaName": "TEST_GUIDANCE",
+                                    "tariffId": "0aba453f-ad40-4159-9924-a909ee47caee",
+                                    "tariffLabel": "TEST_GUIDANCE",
+                                    "tariffValidFromUtc": "2021-10-25T00:00:00",
+                                    "tariffValidToUtc": "2023-06-08T00:00:00",
+                                    "rateSetId": "61e0222d-c854-48a1-9e4d-c6f7d98763f3",
+                                    "rateSetLabel": "TEST_GUIDANCE",
+                                    "daysOfWeekAndHolidayValidity": [
+                                        "MONDAY",
+                                        "TUESDAY",
+                                        "WEDNESDAY",
+                                        "THURSDAY",
+                                        "FRIDAY",
+                                        "SATURDAY",
+                                        "SUNDAY"
+                                    ],
+                                    "rateSetTimeValidFromTime": "00:00:00",
+                                    "rateSetTimeValidToTime": "23:59:00",
+                                    "rateSetMode": {
+                                        "selectedMode": "REGULATED_PAID",
+                                        "unregulatedType": "",
+                                        "regulatedUnpaidType": ""
+                                    },
+                                    "maxLengthOfStayUnit": "HOURS",
+                                    "maxLengthOfStayValue": 2.0,
+                                    "freeParkingUnit": "MINUTES",
+                                    "freeParkingValue": 0.0,
+                                    "gracePeriod": 0,
+                                    "rateCategory": "ANY",
+                                    "listOfParkingSpaces": [
+                                        {
+                                            "id": "0a37b719-33d4-4256-b5ce-bd0e2847f821",
+                                            "legacyId": "1000280010400680003",
+                                            "bayNumber": "3",
+                                            "latitude": -37.81401819524709,
+                                            "longitude": 144.96738109572658
+                                        },
+                                        {
+                                            "id": "4299c1c3-966b-421f-935d-0dadbe707483",
+                                            "legacyId": "1000280010400680004",
+                                            "bayNumber": "4",
+                                            "latitude": -37.814044463084684,
+                                            "longitude": 144.9673945488309
+                                        },
+                                        {
+                                            "id": "c77201d9-bd8d-4712-ae9f-c748bc003bfd",
+                                            "legacyId": "1000280010400680002",
+                                            "bayNumber": "2",
+                                            "latitude": -36.883987163682065,
+                                            "longitude": 144.92736265815918
+                                        },
+                                        {
+                                            "id": "90c0bd83-1ed9-48c0-ad2a-7b5573363dae",
+                                            "legacyId": "1000280010400680001",
+                                            "bayNumber": "1",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b82a1e4-ea7a-4fd3-8227-e9bfb775f5db",
+                                            "legacyId": "1000280010400680005",
+                                            "bayNumber": "5",
+                                            "latitude": -37.81407165499211,
+                                            "longitude": 144.96741130502733
+                                        },
+                                        {
+                                            "id": "b8eb495a-bf2a-444b-bf26-a94f312b60b9",
+                                            "legacyId": null,
+                                            "bayNumber": "8",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b8d49579-8cb4-44a4-bcb4-11be738215e2",
+                                            "legacyId": null,
+                                            "bayNumber": "9",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "9ec96457-13cf-4aa9-b983-95b38240bf8d",
+                                            "legacyId": null,
+                                            "bayNumber": "7",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1038526e-ccb5-4ad7-963e-5d8f5957843c",
+                                            "legacyId": null,
+                                            "bayNumber": "13",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b238d1c-103f-4d29-81a2-214cb5a3c793",
+                                            "legacyId": null,
+                                            "bayNumber": "10",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7bb6a306-71f2-4c93-9013-e2c86ecda32e",
+                                            "legacyId": null,
+                                            "bayNumber": "12",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "67f7eb06-4383-400e-af47-a81aaf504966",
+                                            "legacyId": null,
+                                            "bayNumber": "6",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "71862545-e56a-4328-8ceb-74af4adabb7c",
+                                            "legacyId": null,
+                                            "bayNumber": "11",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "45d8e1a9-0c61-4dbd-bd38-a9c4143e3153",
+                                            "legacyId": null,
+                                            "bayNumber": "14",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7956fe1a-de2c-4737-a492-7dad63e5d368",
+                                            "legacyId": null,
+                                            "bayNumber": "16",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b3a3ab44-34a1-4b39-9d39-67418372fdae",
+                                            "legacyId": null,
+                                            "bayNumber": "15",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b512c37d-057d-4e66-a965-4e0a28795e58",
+                                            "legacyId": null,
+                                            "bayNumber": "22",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "a29baf3b-45a7-4306-91ad-909706670501",
+                                            "legacyId": null,
+                                            "bayNumber": "19",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "118fb647-83d0-4cd7-b9a0-d8e6b867e22e",
+                                            "legacyId": null,
+                                            "bayNumber": "17",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "377bfb6f-4212-46c6-9c40-f5484c92ffa8",
+                                            "legacyId": null,
+                                            "bayNumber": "23",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "e48093ac-f051-4a3f-afd3-4676706688c8",
+                                            "legacyId": null,
+                                            "bayNumber": "18",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2be7f2e0-485f-43b0-8094-17f46076b08e",
+                                            "legacyId": null,
+                                            "bayNumber": "20",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2d5745bc-bc0c-40a5-8899-7afa97adb1da",
+                                            "legacyId": null,
+                                            "bayNumber": "21",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "d661287a-09fb-48e6-b02b-53c209c3f848",
+                                            "legacyId": null,
+                                            "bayNumber": "25",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "0b462c5f-ca9e-4c46-b76f-7569f97c473c",
+                                            "legacyId": null,
+                                            "bayNumber": "24",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        }
+                                    ]
+                                },
+                                "errorCode": null
+                            },
+                            "selectedMode": "REGULATED_PAID",
+                            "rateSetTimeValidFromTime": "00:00:00",
+                            "rateSetTimeValidToTime": "23:59:00",
+                            "maxLengthOfStayUnit": "HOURS",
+                            "maxLengthOfStayValue": 2.0,
+                            "rateSetLabel": "TEST_GUIDANCE",
+                            "complianceCheckStatus": null
+                        },
+                        "calculatedValues": null
+                    }
+                },
+                {
+                    "bdd": null,
+                    "continue": "no",
+                    "spaceId": "1000280010400680002",
+                    "complianceStatus": "Time Exceeded",
+                    "detail": {
+                        "occupancy": {
+                            "occupancyDateTime": "2021-10-25T22:31:11.6330000",
+                            "occupancyStatus": "Occupied",
+                            "occupancyTs": "1635201071633",
+                            "occupancyInTime": "00:00:00",
+                            "occupancyDetail": {
+                                "statusCode": 200,
+                                "url": "https://sit-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/comocc/cid/28/sid/1000280010400680002.json?APIMSubscriptionKey=fb901b49b22641af9357c14e177a99f4",
+                                "requestTime": "2021-10-27T09:58:52.0188516Z",
+                                "responseTime": "2021-10-27T09:58:57.0912443Z",
+                                "response": {
+                                    "PEMS": {
+                                        "occupancy": {
+                                            "customer": [
+                                                {
+                                                    "cid": "28",
+                                                    "area": [
+                                                        {
+                                                            "aid": "100",
+                                                            "meter": [
+                                                                {
+                                                                    "mid": "40068",
+                                                                    "space": [
+                                                                        {
+                                                                            "psid": "1000280010400680002",
+                                                                            "occupancyStatus": {
+                                                                                "osId": 1,
+                                                                                "osTs": 1635201071633,
+                                                                                "expiryTs": null
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "complianceCheckStatus": "Occupied"
+                        },
+                        "payment": {
+                            "paymentDetail": {
+                                "statusCode": 200,
+                                "url": "https://apim-pems-shared-sit.azure-api.net/qpl/payment/lookup?cid=z97Zl2t52Qg&code=comsecret&spaceId=1000280010400680002&key=321e242742e243c0860e69b5311ad20c",
+                                "requestTime": "2021-10-27T09:58:52.0207328Z",
+                                "responseTime": "2021-10-27T09:58:52.5328418Z",
+                                "response": {
+                                    "customerId": "z97Zl2t52Qg",
+                                    "lpn": "1000280010400680002",
+                                    "spaceId": null,
+                                    "startTime": null,
+                                    "endTime": null,
+                                    "paidDuration": 0,
+                                    "zoneId": null,
+                                    "zoneName": null,
+                                    "meterId": null,
+                                    "meterName": null,
+                                    "parkingAreaName": null,
+                                    "permits": null
+                                }
+                            },
+                            "paymentStartTime": null,
+                            "paymentEndTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "clearPin": {
+                            "clearPinDateTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "regulatedSchedule": {
+                            "tariffDetail": {
+                                "tariff": {
+                                    "parkingAreaId": "a9df1b8b-2f14-4a47-8b9b-49c82e1ce61e",
+                                    "parkingAreaName": "IAW1",
+                                    "tariffAreaId": "5faaf7c8-62ff-4599-bb78-78412a187142",
+                                    "tariffAreaName": "TEST_GUIDANCE",
+                                    "tariffId": "0aba453f-ad40-4159-9924-a909ee47caee",
+                                    "tariffLabel": "TEST_GUIDANCE",
+                                    "tariffValidFromUtc": "2021-10-25T00:00:00",
+                                    "tariffValidToUtc": "2023-06-08T00:00:00",
+                                    "rateSetId": "61e0222d-c854-48a1-9e4d-c6f7d98763f3",
+                                    "rateSetLabel": "TEST_GUIDANCE",
+                                    "daysOfWeekAndHolidayValidity": [
+                                        "MONDAY",
+                                        "TUESDAY",
+                                        "WEDNESDAY",
+                                        "THURSDAY",
+                                        "FRIDAY",
+                                        "SATURDAY",
+                                        "SUNDAY"
+                                    ],
+                                    "rateSetTimeValidFromTime": "00:00:00",
+                                    "rateSetTimeValidToTime": "23:59:00",
+                                    "rateSetMode": {
+                                        "selectedMode": "REGULATED_PAID",
+                                        "unregulatedType": "",
+                                        "regulatedUnpaidType": ""
+                                    },
+                                    "maxLengthOfStayUnit": "HOURS",
+                                    "maxLengthOfStayValue": 2.0,
+                                    "freeParkingUnit": "MINUTES",
+                                    "freeParkingValue": 0.0,
+                                    "gracePeriod": 0,
+                                    "rateCategory": "ANY",
+                                    "listOfParkingSpaces": [
+                                        {
+                                            "id": "0a37b719-33d4-4256-b5ce-bd0e2847f821",
+                                            "legacyId": "1000280010400680003",
+                                            "bayNumber": "3",
+                                            "latitude": -37.81401819524709,
+                                            "longitude": 144.96738109572658
+                                        },
+                                        {
+                                            "id": "4299c1c3-966b-421f-935d-0dadbe707483",
+                                            "legacyId": "1000280010400680004",
+                                            "bayNumber": "4",
+                                            "latitude": -37.814044463084684,
+                                            "longitude": 144.9673945488309
+                                        },
+                                        {
+                                            "id": "c77201d9-bd8d-4712-ae9f-c748bc003bfd",
+                                            "legacyId": "1000280010400680002",
+                                            "bayNumber": "2",
+                                            "latitude": -36.883987163682065,
+                                            "longitude": 144.92736265815918
+                                        },
+                                        {
+                                            "id": "90c0bd83-1ed9-48c0-ad2a-7b5573363dae",
+                                            "legacyId": "1000280010400680001",
+                                            "bayNumber": "1",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b82a1e4-ea7a-4fd3-8227-e9bfb775f5db",
+                                            "legacyId": "1000280010400680005",
+                                            "bayNumber": "5",
+                                            "latitude": -37.81407165499211,
+                                            "longitude": 144.96741130502733
+                                        },
+                                        {
+                                            "id": "b8eb495a-bf2a-444b-bf26-a94f312b60b9",
+                                            "legacyId": null,
+                                            "bayNumber": "8",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b8d49579-8cb4-44a4-bcb4-11be738215e2",
+                                            "legacyId": null,
+                                            "bayNumber": "9",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "9ec96457-13cf-4aa9-b983-95b38240bf8d",
+                                            "legacyId": null,
+                                            "bayNumber": "7",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1038526e-ccb5-4ad7-963e-5d8f5957843c",
+                                            "legacyId": null,
+                                            "bayNumber": "13",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b238d1c-103f-4d29-81a2-214cb5a3c793",
+                                            "legacyId": null,
+                                            "bayNumber": "10",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7bb6a306-71f2-4c93-9013-e2c86ecda32e",
+                                            "legacyId": null,
+                                            "bayNumber": "12",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "67f7eb06-4383-400e-af47-a81aaf504966",
+                                            "legacyId": null,
+                                            "bayNumber": "6",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "71862545-e56a-4328-8ceb-74af4adabb7c",
+                                            "legacyId": null,
+                                            "bayNumber": "11",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "45d8e1a9-0c61-4dbd-bd38-a9c4143e3153",
+                                            "legacyId": null,
+                                            "bayNumber": "14",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7956fe1a-de2c-4737-a492-7dad63e5d368",
+                                            "legacyId": null,
+                                            "bayNumber": "16",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b3a3ab44-34a1-4b39-9d39-67418372fdae",
+                                            "legacyId": null,
+                                            "bayNumber": "15",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b512c37d-057d-4e66-a965-4e0a28795e58",
+                                            "legacyId": null,
+                                            "bayNumber": "22",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "a29baf3b-45a7-4306-91ad-909706670501",
+                                            "legacyId": null,
+                                            "bayNumber": "19",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "118fb647-83d0-4cd7-b9a0-d8e6b867e22e",
+                                            "legacyId": null,
+                                            "bayNumber": "17",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "377bfb6f-4212-46c6-9c40-f5484c92ffa8",
+                                            "legacyId": null,
+                                            "bayNumber": "23",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "e48093ac-f051-4a3f-afd3-4676706688c8",
+                                            "legacyId": null,
+                                            "bayNumber": "18",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2be7f2e0-485f-43b0-8094-17f46076b08e",
+                                            "legacyId": null,
+                                            "bayNumber": "20",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2d5745bc-bc0c-40a5-8899-7afa97adb1da",
+                                            "legacyId": null,
+                                            "bayNumber": "21",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "d661287a-09fb-48e6-b02b-53c209c3f848",
+                                            "legacyId": null,
+                                            "bayNumber": "25",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "0b462c5f-ca9e-4c46-b76f-7569f97c473c",
+                                            "legacyId": null,
+                                            "bayNumber": "24",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        }
+                                    ]
+                                },
+                                "errorCode": null
+                            },
+                            "selectedMode": "REGULATED_PAID",
+                            "rateSetTimeValidFromTime": "00:00:00",
+                            "rateSetTimeValidToTime": "23:59:00",
+                            "maxLengthOfStayUnit": "HOURS",
+                            "maxLengthOfStayValue": 2.0,
+                            "rateSetLabel": "TEST_GUIDANCE",
+                            "complianceCheckStatus": "Regulated"
+                        },
+                        "calculatedValues": {
+                            "inTimeWithinRegulation": "00:00:00",
+                            "expiryTimeWithinRegulation": "02:00:00",
+                            "durationWithinRegulation": 598,
+                            "timeRemainingWithoutGracePeriod": -478,
+                            "timeRemainingWithGracePeriod": -478
+                        }
+                    }
+                },
+                {
+                    "bdd": null,
+                    "continue": "no",
+                    "spaceId": "1000280010400680003",
+                    "complianceStatus": "Time Exceeded",
+                    "detail": {
+                        "occupancy": {
+                            "occupancyDateTime": "2021-10-19T11:16:01.1620000",
+                            "occupancyStatus": "Occupied",
+                            "occupancyTs": "1634642161162",
+                            "occupancyInTime": "00:00:00",
+                            "occupancyDetail": {
+                                "statusCode": 200,
+                                "url": "https://sit-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/comocc/cid/28/sid/1000280010400680003.json?APIMSubscriptionKey=fb901b49b22641af9357c14e177a99f4",
+                                "requestTime": "2021-10-27T09:58:52.0196038Z",
+                                "responseTime": "2021-10-27T09:58:56.2974580Z",
+                                "response": {
+                                    "PEMS": {
+                                        "occupancy": {
+                                            "customer": [
+                                                {
+                                                    "cid": "28",
+                                                    "area": [
+                                                        {
+                                                            "aid": "100",
+                                                            "meter": [
+                                                                {
+                                                                    "mid": "40068",
+                                                                    "space": [
+                                                                        {
+                                                                            "psid": "1000280010400680003",
+                                                                            "occupancyStatus": {
+                                                                                "osId": 1,
+                                                                                "osTs": 1634642161162,
+                                                                                "expiryTs": null
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "complianceCheckStatus": "Occupied"
+                        },
+                        "payment": {
+                            "paymentDetail": {
+                                "statusCode": 200,
+                                "url": "https://apim-pems-shared-sit.azure-api.net/qpl/payment/lookup?cid=z97Zl2t52Qg&code=comsecret&spaceId=1000280010400680003&key=321e242742e243c0860e69b5311ad20c",
+                                "requestTime": "2021-10-27T09:58:52.0213319Z",
+                                "responseTime": "2021-10-27T09:58:52.5284990Z",
+                                "response": {
+                                    "customerId": "z97Zl2t52Qg",
+                                    "lpn": "1000280010400680003",
+                                    "spaceId": null,
+                                    "startTime": null,
+                                    "endTime": null,
+                                    "paidDuration": 0,
+                                    "zoneId": null,
+                                    "zoneName": null,
+                                    "meterId": null,
+                                    "meterName": null,
+                                    "parkingAreaName": null,
+                                    "permits": null
+                                }
+                            },
+                            "paymentStartTime": null,
+                            "paymentEndTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "clearPin": {
+                            "clearPinDateTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "regulatedSchedule": {
+                            "tariffDetail": {
+                                "tariff": {
+                                    "parkingAreaId": "a9df1b8b-2f14-4a47-8b9b-49c82e1ce61e",
+                                    "parkingAreaName": "IAW1",
+                                    "tariffAreaId": "5faaf7c8-62ff-4599-bb78-78412a187142",
+                                    "tariffAreaName": "TEST_GUIDANCE",
+                                    "tariffId": "0aba453f-ad40-4159-9924-a909ee47caee",
+                                    "tariffLabel": "TEST_GUIDANCE",
+                                    "tariffValidFromUtc": "2021-10-25T00:00:00",
+                                    "tariffValidToUtc": "2023-06-08T00:00:00",
+                                    "rateSetId": "61e0222d-c854-48a1-9e4d-c6f7d98763f3",
+                                    "rateSetLabel": "TEST_GUIDANCE",
+                                    "daysOfWeekAndHolidayValidity": [
+                                        "MONDAY",
+                                        "TUESDAY",
+                                        "WEDNESDAY",
+                                        "THURSDAY",
+                                        "FRIDAY",
+                                        "SATURDAY",
+                                        "SUNDAY"
+                                    ],
+                                    "rateSetTimeValidFromTime": "00:00:00",
+                                    "rateSetTimeValidToTime": "23:59:00",
+                                    "rateSetMode": {
+                                        "selectedMode": "REGULATED_PAID",
+                                        "unregulatedType": "",
+                                        "regulatedUnpaidType": ""
+                                    },
+                                    "maxLengthOfStayUnit": "HOURS",
+                                    "maxLengthOfStayValue": 2.0,
+                                    "freeParkingUnit": "MINUTES",
+                                    "freeParkingValue": 0.0,
+                                    "gracePeriod": 0,
+                                    "rateCategory": "ANY",
+                                    "listOfParkingSpaces": [
+                                        {
+                                            "id": "0a37b719-33d4-4256-b5ce-bd0e2847f821",
+                                            "legacyId": "1000280010400680003",
+                                            "bayNumber": "3",
+                                            "latitude": -37.81401819524709,
+                                            "longitude": 144.96738109572658
+                                        },
+                                        {
+                                            "id": "4299c1c3-966b-421f-935d-0dadbe707483",
+                                            "legacyId": "1000280010400680004",
+                                            "bayNumber": "4",
+                                            "latitude": -37.814044463084684,
+                                            "longitude": 144.9673945488309
+                                        },
+                                        {
+                                            "id": "c77201d9-bd8d-4712-ae9f-c748bc003bfd",
+                                            "legacyId": "1000280010400680002",
+                                            "bayNumber": "2",
+                                            "latitude": -36.883987163682065,
+                                            "longitude": 144.92736265815918
+                                        },
+                                        {
+                                            "id": "90c0bd83-1ed9-48c0-ad2a-7b5573363dae",
+                                            "legacyId": "1000280010400680001",
+                                            "bayNumber": "1",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b82a1e4-ea7a-4fd3-8227-e9bfb775f5db",
+                                            "legacyId": "1000280010400680005",
+                                            "bayNumber": "5",
+                                            "latitude": -37.81407165499211,
+                                            "longitude": 144.96741130502733
+                                        },
+                                        {
+                                            "id": "b8eb495a-bf2a-444b-bf26-a94f312b60b9",
+                                            "legacyId": null,
+                                            "bayNumber": "8",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b8d49579-8cb4-44a4-bcb4-11be738215e2",
+                                            "legacyId": null,
+                                            "bayNumber": "9",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "9ec96457-13cf-4aa9-b983-95b38240bf8d",
+                                            "legacyId": null,
+                                            "bayNumber": "7",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1038526e-ccb5-4ad7-963e-5d8f5957843c",
+                                            "legacyId": null,
+                                            "bayNumber": "13",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b238d1c-103f-4d29-81a2-214cb5a3c793",
+                                            "legacyId": null,
+                                            "bayNumber": "10",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7bb6a306-71f2-4c93-9013-e2c86ecda32e",
+                                            "legacyId": null,
+                                            "bayNumber": "12",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "67f7eb06-4383-400e-af47-a81aaf504966",
+                                            "legacyId": null,
+                                            "bayNumber": "6",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "71862545-e56a-4328-8ceb-74af4adabb7c",
+                                            "legacyId": null,
+                                            "bayNumber": "11",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "45d8e1a9-0c61-4dbd-bd38-a9c4143e3153",
+                                            "legacyId": null,
+                                            "bayNumber": "14",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7956fe1a-de2c-4737-a492-7dad63e5d368",
+                                            "legacyId": null,
+                                            "bayNumber": "16",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b3a3ab44-34a1-4b39-9d39-67418372fdae",
+                                            "legacyId": null,
+                                            "bayNumber": "15",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b512c37d-057d-4e66-a965-4e0a28795e58",
+                                            "legacyId": null,
+                                            "bayNumber": "22",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "a29baf3b-45a7-4306-91ad-909706670501",
+                                            "legacyId": null,
+                                            "bayNumber": "19",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "118fb647-83d0-4cd7-b9a0-d8e6b867e22e",
+                                            "legacyId": null,
+                                            "bayNumber": "17",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "377bfb6f-4212-46c6-9c40-f5484c92ffa8",
+                                            "legacyId": null,
+                                            "bayNumber": "23",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "e48093ac-f051-4a3f-afd3-4676706688c8",
+                                            "legacyId": null,
+                                            "bayNumber": "18",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2be7f2e0-485f-43b0-8094-17f46076b08e",
+                                            "legacyId": null,
+                                            "bayNumber": "20",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2d5745bc-bc0c-40a5-8899-7afa97adb1da",
+                                            "legacyId": null,
+                                            "bayNumber": "21",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "d661287a-09fb-48e6-b02b-53c209c3f848",
+                                            "legacyId": null,
+                                            "bayNumber": "25",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "0b462c5f-ca9e-4c46-b76f-7569f97c473c",
+                                            "legacyId": null,
+                                            "bayNumber": "24",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        }
+                                    ]
+                                },
+                                "errorCode": null
+                            },
+                            "selectedMode": "REGULATED_PAID",
+                            "rateSetTimeValidFromTime": "00:00:00",
+                            "rateSetTimeValidToTime": "23:59:00",
+                            "maxLengthOfStayUnit": "HOURS",
+                            "maxLengthOfStayValue": 2.0,
+                            "rateSetLabel": "TEST_GUIDANCE",
+                            "complianceCheckStatus": "Regulated"
+                        },
+                        "calculatedValues": {
+                            "inTimeWithinRegulation": "00:00:00",
+                            "expiryTimeWithinRegulation": "02:00:00",
+                            "durationWithinRegulation": 598,
+                            "timeRemainingWithoutGracePeriod": -478,
+                            "timeRemainingWithGracePeriod": -478
+                        }
+                    }
+                },
+                {
+                    "bdd": null,
+                    "continue": "no",
+                    "spaceId": "1000280010400680004",
+                    "complianceStatus": "Time Exceeded",
+                    "detail": {
+                        "occupancy": {
+                            "occupancyDateTime": "2021-10-19T11:16:05.1790000",
+                            "occupancyStatus": "Occupied",
+                            "occupancyTs": "1634642165179",
+                            "occupancyInTime": "00:00:00",
+                            "occupancyDetail": {
+                                "statusCode": 200,
+                                "url": "https://sit-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/comocc/cid/28/sid/1000280010400680004.json?APIMSubscriptionKey=fb901b49b22641af9357c14e177a99f4",
+                                "requestTime": "2021-10-27T09:58:52.1311135Z",
+                                "responseTime": "2021-10-27T09:58:57.0198646Z",
+                                "response": {
+                                    "PEMS": {
+                                        "occupancy": {
+                                            "customer": [
+                                                {
+                                                    "cid": "28",
+                                                    "area": [
+                                                        {
+                                                            "aid": "100",
+                                                            "meter": [
+                                                                {
+                                                                    "mid": "40068",
+                                                                    "space": [
+                                                                        {
+                                                                            "psid": "1000280010400680004",
+                                                                            "occupancyStatus": {
+                                                                                "osId": 1,
+                                                                                "osTs": 1634642165179,
+                                                                                "expiryTs": null
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "complianceCheckStatus": "Occupied"
+                        },
+                        "payment": {
+                            "paymentDetail": {
+                                "statusCode": 200,
+                                "url": "https://apim-pems-shared-sit.azure-api.net/qpl/payment/lookup?cid=z97Zl2t52Qg&code=comsecret&spaceId=1000280010400680004&key=321e242742e243c0860e69b5311ad20c",
+                                "requestTime": "2021-10-27T09:58:52.1255432Z",
+                                "responseTime": "2021-10-27T09:58:52.5394223Z",
+                                "response": {
+                                    "customerId": "z97Zl2t52Qg",
+                                    "lpn": "1000280010400680004",
+                                    "spaceId": null,
+                                    "startTime": null,
+                                    "endTime": null,
+                                    "paidDuration": 0,
+                                    "zoneId": null,
+                                    "zoneName": null,
+                                    "meterId": null,
+                                    "meterName": null,
+                                    "parkingAreaName": null,
+                                    "permits": null
+                                }
+                            },
+                            "paymentStartTime": null,
+                            "paymentEndTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "clearPin": {
+                            "clearPinDateTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "regulatedSchedule": {
+                            "tariffDetail": {
+                                "tariff": {
+                                    "parkingAreaId": "a9df1b8b-2f14-4a47-8b9b-49c82e1ce61e",
+                                    "parkingAreaName": "IAW1",
+                                    "tariffAreaId": "5faaf7c8-62ff-4599-bb78-78412a187142",
+                                    "tariffAreaName": "TEST_GUIDANCE",
+                                    "tariffId": "0aba453f-ad40-4159-9924-a909ee47caee",
+                                    "tariffLabel": "TEST_GUIDANCE",
+                                    "tariffValidFromUtc": "2021-10-25T00:00:00",
+                                    "tariffValidToUtc": "2023-06-08T00:00:00",
+                                    "rateSetId": "61e0222d-c854-48a1-9e4d-c6f7d98763f3",
+                                    "rateSetLabel": "TEST_GUIDANCE",
+                                    "daysOfWeekAndHolidayValidity": [
+                                        "MONDAY",
+                                        "TUESDAY",
+                                        "WEDNESDAY",
+                                        "THURSDAY",
+                                        "FRIDAY",
+                                        "SATURDAY",
+                                        "SUNDAY"
+                                    ],
+                                    "rateSetTimeValidFromTime": "00:00:00",
+                                    "rateSetTimeValidToTime": "23:59:00",
+                                    "rateSetMode": {
+                                        "selectedMode": "REGULATED_PAID",
+                                        "unregulatedType": "",
+                                        "regulatedUnpaidType": ""
+                                    },
+                                    "maxLengthOfStayUnit": "HOURS",
+                                    "maxLengthOfStayValue": 2.0,
+                                    "freeParkingUnit": "MINUTES",
+                                    "freeParkingValue": 0.0,
+                                    "gracePeriod": 0,
+                                    "rateCategory": "ANY",
+                                    "listOfParkingSpaces": [
+                                        {
+                                            "id": "0a37b719-33d4-4256-b5ce-bd0e2847f821",
+                                            "legacyId": "1000280010400680003",
+                                            "bayNumber": "3",
+                                            "latitude": -37.81401819524709,
+                                            "longitude": 144.96738109572658
+                                        },
+                                        {
+                                            "id": "4299c1c3-966b-421f-935d-0dadbe707483",
+                                            "legacyId": "1000280010400680004",
+                                            "bayNumber": "4",
+                                            "latitude": -37.814044463084684,
+                                            "longitude": 144.9673945488309
+                                        },
+                                        {
+                                            "id": "c77201d9-bd8d-4712-ae9f-c748bc003bfd",
+                                            "legacyId": "1000280010400680002",
+                                            "bayNumber": "2",
+                                            "latitude": -36.883987163682065,
+                                            "longitude": 144.92736265815918
+                                        },
+                                        {
+                                            "id": "90c0bd83-1ed9-48c0-ad2a-7b5573363dae",
+                                            "legacyId": "1000280010400680001",
+                                            "bayNumber": "1",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b82a1e4-ea7a-4fd3-8227-e9bfb775f5db",
+                                            "legacyId": "1000280010400680005",
+                                            "bayNumber": "5",
+                                            "latitude": -37.81407165499211,
+                                            "longitude": 144.96741130502733
+                                        },
+                                        {
+                                            "id": "b8eb495a-bf2a-444b-bf26-a94f312b60b9",
+                                            "legacyId": null,
+                                            "bayNumber": "8",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b8d49579-8cb4-44a4-bcb4-11be738215e2",
+                                            "legacyId": null,
+                                            "bayNumber": "9",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "9ec96457-13cf-4aa9-b983-95b38240bf8d",
+                                            "legacyId": null,
+                                            "bayNumber": "7",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1038526e-ccb5-4ad7-963e-5d8f5957843c",
+                                            "legacyId": null,
+                                            "bayNumber": "13",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b238d1c-103f-4d29-81a2-214cb5a3c793",
+                                            "legacyId": null,
+                                            "bayNumber": "10",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7bb6a306-71f2-4c93-9013-e2c86ecda32e",
+                                            "legacyId": null,
+                                            "bayNumber": "12",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "67f7eb06-4383-400e-af47-a81aaf504966",
+                                            "legacyId": null,
+                                            "bayNumber": "6",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "71862545-e56a-4328-8ceb-74af4adabb7c",
+                                            "legacyId": null,
+                                            "bayNumber": "11",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "45d8e1a9-0c61-4dbd-bd38-a9c4143e3153",
+                                            "legacyId": null,
+                                            "bayNumber": "14",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7956fe1a-de2c-4737-a492-7dad63e5d368",
+                                            "legacyId": null,
+                                            "bayNumber": "16",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b3a3ab44-34a1-4b39-9d39-67418372fdae",
+                                            "legacyId": null,
+                                            "bayNumber": "15",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b512c37d-057d-4e66-a965-4e0a28795e58",
+                                            "legacyId": null,
+                                            "bayNumber": "22",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "a29baf3b-45a7-4306-91ad-909706670501",
+                                            "legacyId": null,
+                                            "bayNumber": "19",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "118fb647-83d0-4cd7-b9a0-d8e6b867e22e",
+                                            "legacyId": null,
+                                            "bayNumber": "17",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "377bfb6f-4212-46c6-9c40-f5484c92ffa8",
+                                            "legacyId": null,
+                                            "bayNumber": "23",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "e48093ac-f051-4a3f-afd3-4676706688c8",
+                                            "legacyId": null,
+                                            "bayNumber": "18",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2be7f2e0-485f-43b0-8094-17f46076b08e",
+                                            "legacyId": null,
+                                            "bayNumber": "20",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2d5745bc-bc0c-40a5-8899-7afa97adb1da",
+                                            "legacyId": null,
+                                            "bayNumber": "21",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "d661287a-09fb-48e6-b02b-53c209c3f848",
+                                            "legacyId": null,
+                                            "bayNumber": "25",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "0b462c5f-ca9e-4c46-b76f-7569f97c473c",
+                                            "legacyId": null,
+                                            "bayNumber": "24",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        }
+                                    ]
+                                },
+                                "errorCode": null
+                            },
+                            "selectedMode": "REGULATED_PAID",
+                            "rateSetTimeValidFromTime": "00:00:00",
+                            "rateSetTimeValidToTime": "23:59:00",
+                            "maxLengthOfStayUnit": "HOURS",
+                            "maxLengthOfStayValue": 2.0,
+                            "rateSetLabel": "TEST_GUIDANCE",
+                            "complianceCheckStatus": "Regulated"
+                        },
+                        "calculatedValues": {
+                            "inTimeWithinRegulation": "00:00:00",
+                            "expiryTimeWithinRegulation": "02:00:00",
+                            "durationWithinRegulation": 598,
+                            "timeRemainingWithoutGracePeriod": -478,
+                            "timeRemainingWithGracePeriod": -478
+                        }
+                    }
+                },
+                {
+                    "bdd": null,
+                    "continue": "no",
+                    "spaceId": "1000280010400680005",
+                    "complianceStatus": "Time Exceeded",
+                    "detail": {
+                        "occupancy": {
+                            "occupancyDateTime": "2021-10-19T13:04:39.7080000",
+                            "occupancyStatus": "Occupied",
+                            "occupancyTs": "1634648679708",
+                            "occupancyInTime": "00:00:00",
+                            "occupancyDetail": {
+                                "statusCode": 200,
+                                "url": "https://sit-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/comocc/cid/28/sid/1000280010400680005.json?APIMSubscriptionKey=fb901b49b22641af9357c14e177a99f4",
+                                "requestTime": "2021-10-27T09:58:52.1940511Z",
+                                "responseTime": "2021-10-27T09:58:57.0282681Z",
+                                "response": {
+                                    "PEMS": {
+                                        "occupancy": {
+                                            "customer": [
+                                                {
+                                                    "cid": "28",
+                                                    "area": [
+                                                        {
+                                                            "aid": "100",
+                                                            "meter": [
+                                                                {
+                                                                    "mid": "40068",
+                                                                    "space": [
+                                                                        {
+                                                                            "psid": "1000280010400680005",
+                                                                            "occupancyStatus": {
+                                                                                "osId": 1,
+                                                                                "osTs": 1634648679708,
+                                                                                "expiryTs": null
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "complianceCheckStatus": "Occupied"
+                        },
+                        "payment": {
+                            "paymentDetail": {
+                                "statusCode": 200,
+                                "url": "https://apim-pems-shared-sit.azure-api.net/qpl/payment/lookup?cid=z97Zl2t52Qg&code=comsecret&spaceId=1000280010400680005&key=321e242742e243c0860e69b5311ad20c",
+                                "requestTime": "2021-10-27T09:58:52.1958487Z",
+                                "responseTime": "2021-10-27T09:58:53.2373797Z",
+                                "response": {
+                                    "customerId": "z97Zl2t52Qg",
+                                    "lpn": "1000280010400680005",
+                                    "spaceId": null,
+                                    "startTime": null,
+                                    "endTime": null,
+                                    "paidDuration": 0,
+                                    "zoneId": null,
+                                    "zoneName": null,
+                                    "meterId": null,
+                                    "meterName": null,
+                                    "parkingAreaName": null,
+                                    "permits": null
+                                }
+                            },
+                            "paymentStartTime": null,
+                            "paymentEndTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "clearPin": {
+                            "clearPinDateTime": null,
+                            "complianceCheckStatus": null
+                        },
+                        "regulatedSchedule": {
+                            "tariffDetail": {
+                                "tariff": {
+                                    "parkingAreaId": "a9df1b8b-2f14-4a47-8b9b-49c82e1ce61e",
+                                    "parkingAreaName": "IAW1",
+                                    "tariffAreaId": "5faaf7c8-62ff-4599-bb78-78412a187142",
+                                    "tariffAreaName": "TEST_GUIDANCE",
+                                    "tariffId": "0aba453f-ad40-4159-9924-a909ee47caee",
+                                    "tariffLabel": "TEST_GUIDANCE",
+                                    "tariffValidFromUtc": "2021-10-25T00:00:00",
+                                    "tariffValidToUtc": "2023-06-08T00:00:00",
+                                    "rateSetId": "61e0222d-c854-48a1-9e4d-c6f7d98763f3",
+                                    "rateSetLabel": "TEST_GUIDANCE",
+                                    "daysOfWeekAndHolidayValidity": [
+                                        "MONDAY",
+                                        "TUESDAY",
+                                        "WEDNESDAY",
+                                        "THURSDAY",
+                                        "FRIDAY",
+                                        "SATURDAY",
+                                        "SUNDAY"
+                                    ],
+                                    "rateSetTimeValidFromTime": "00:00:00",
+                                    "rateSetTimeValidToTime": "23:59:00",
+                                    "rateSetMode": {
+                                        "selectedMode": "REGULATED_PAID",
+                                        "unregulatedType": "",
+                                        "regulatedUnpaidType": ""
+                                    },
+                                    "maxLengthOfStayUnit": "HOURS",
+                                    "maxLengthOfStayValue": 2.0,
+                                    "freeParkingUnit": "MINUTES",
+                                    "freeParkingValue": 0.0,
+                                    "gracePeriod": 0,
+                                    "rateCategory": "ANY",
+                                    "listOfParkingSpaces": [
+                                        {
+                                            "id": "0a37b719-33d4-4256-b5ce-bd0e2847f821",
+                                            "legacyId": "1000280010400680003",
+                                            "bayNumber": "3",
+                                            "latitude": -37.81401819524709,
+                                            "longitude": 144.96738109572658
+                                        },
+                                        {
+                                            "id": "4299c1c3-966b-421f-935d-0dadbe707483",
+                                            "legacyId": "1000280010400680004",
+                                            "bayNumber": "4",
+                                            "latitude": -37.814044463084684,
+                                            "longitude": 144.9673945488309
+                                        },
+                                        {
+                                            "id": "c77201d9-bd8d-4712-ae9f-c748bc003bfd",
+                                            "legacyId": "1000280010400680002",
+                                            "bayNumber": "2",
+                                            "latitude": -36.883987163682065,
+                                            "longitude": 144.92736265815918
+                                        },
+                                        {
+                                            "id": "90c0bd83-1ed9-48c0-ad2a-7b5573363dae",
+                                            "legacyId": "1000280010400680001",
+                                            "bayNumber": "1",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b82a1e4-ea7a-4fd3-8227-e9bfb775f5db",
+                                            "legacyId": "1000280010400680005",
+                                            "bayNumber": "5",
+                                            "latitude": -37.81407165499211,
+                                            "longitude": 144.96741130502733
+                                        },
+                                        {
+                                            "id": "b8eb495a-bf2a-444b-bf26-a94f312b60b9",
+                                            "legacyId": null,
+                                            "bayNumber": "8",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b8d49579-8cb4-44a4-bcb4-11be738215e2",
+                                            "legacyId": null,
+                                            "bayNumber": "9",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "9ec96457-13cf-4aa9-b983-95b38240bf8d",
+                                            "legacyId": null,
+                                            "bayNumber": "7",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1038526e-ccb5-4ad7-963e-5d8f5957843c",
+                                            "legacyId": null,
+                                            "bayNumber": "13",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "1b238d1c-103f-4d29-81a2-214cb5a3c793",
+                                            "legacyId": null,
+                                            "bayNumber": "10",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7bb6a306-71f2-4c93-9013-e2c86ecda32e",
+                                            "legacyId": null,
+                                            "bayNumber": "12",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "67f7eb06-4383-400e-af47-a81aaf504966",
+                                            "legacyId": null,
+                                            "bayNumber": "6",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "71862545-e56a-4328-8ceb-74af4adabb7c",
+                                            "legacyId": null,
+                                            "bayNumber": "11",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "45d8e1a9-0c61-4dbd-bd38-a9c4143e3153",
+                                            "legacyId": null,
+                                            "bayNumber": "14",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "7956fe1a-de2c-4737-a492-7dad63e5d368",
+                                            "legacyId": null,
+                                            "bayNumber": "16",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b3a3ab44-34a1-4b39-9d39-67418372fdae",
+                                            "legacyId": null,
+                                            "bayNumber": "15",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "b512c37d-057d-4e66-a965-4e0a28795e58",
+                                            "legacyId": null,
+                                            "bayNumber": "22",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "a29baf3b-45a7-4306-91ad-909706670501",
+                                            "legacyId": null,
+                                            "bayNumber": "19",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "118fb647-83d0-4cd7-b9a0-d8e6b867e22e",
+                                            "legacyId": null,
+                                            "bayNumber": "17",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "377bfb6f-4212-46c6-9c40-f5484c92ffa8",
+                                            "legacyId": null,
+                                            "bayNumber": "23",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "e48093ac-f051-4a3f-afd3-4676706688c8",
+                                            "legacyId": null,
+                                            "bayNumber": "18",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2be7f2e0-485f-43b0-8094-17f46076b08e",
+                                            "legacyId": null,
+                                            "bayNumber": "20",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "2d5745bc-bc0c-40a5-8899-7afa97adb1da",
+                                            "legacyId": null,
+                                            "bayNumber": "21",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "d661287a-09fb-48e6-b02b-53c209c3f848",
+                                            "legacyId": null,
+                                            "bayNumber": "25",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        },
+                                        {
+                                            "id": "0b462c5f-ca9e-4c46-b76f-7569f97c473c",
+                                            "legacyId": null,
+                                            "bayNumber": "24",
+                                            "latitude": -37.813961,
+                                            "longitude": 144.967346
+                                        }
+                                    ]
+                                },
+                                "errorCode": null
+                            },
+                            "selectedMode": "REGULATED_PAID",
+                            "rateSetTimeValidFromTime": "00:00:00",
+                            "rateSetTimeValidToTime": "23:59:00",
+                            "maxLengthOfStayUnit": "HOURS",
+                            "maxLengthOfStayValue": 2.0,
+                            "rateSetLabel": "TEST_GUIDANCE",
+                            "complianceCheckStatus": "Regulated"
+                        },
+                        "calculatedValues": {
+                            "inTimeWithinRegulation": "00:00:00",
+                            "expiryTimeWithinRegulation": "02:00:00",
+                            "durationWithinRegulation": 598,
+                            "timeRemainingWithoutGracePeriod": -478,
+                            "timeRemainingWithGracePeriod": -478
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,394 @@
+{
+    "customerId": "06c833ad-1be3-445c-bcf0-9ed81a6e65d0",
+    "inquiryTime": "2021-10-26T15:56:00.7600000Z",
+    "inquiryTimeMinute": 956,
+    "errorStatus": null,
+    "parkingArea": [{
+        "parkingAreaId": "6001f19f-efac-4a7a-9d36-a1cd44e353c2",
+        "regulatedSchedule": {
+            "tariffDetail": {
+                "tariff": {
+                    "parkingAreaId": "6001f19f-efac-4a7a-9d36-a1cd44e353c2",
+                    "parkingAreaName": "Dock Two",
+                    "tariffAreaId": "3b147e13-4836-4128-ae49-903829114fde",
+                    "tariffAreaName": "New Tariff Area X",
+                    "tariffId": "c150f79e-6534-4675-b183-dc5c38d17dd8",
+                    "tariffLabel": "NEW TA",
+                    "tariffValidFromUtc": "2021-07-30T00:00:00",
+                    "tariffValidToUtc": "2021-12-15T02:00:00",
+                    "rateSetId": "2e85b20a-a55a-46d6-a877-dee39be8eaac",
+                    "rateSetLabel": "8 am - 6 pm, $4/hour, 2P, Mon - Sun",
+                    "daysOfWeekAndHolidayValidity": [
+                        "MONDAY",
+                        "TUESDAY",
+                        "WEDNESDAY",
+                        "THURSDAY",
+                        "FRIDAY",
+                        "SATURDAY",
+                        "SUNDAY",
+                        "PUBLIC_HOLIDAY"
+                    ],
+                    "rateSetTimeValidFromTime": "03:00:00",
+                    "rateSetTimeValidToTime": "18:00:00",
+                    "rateSetMode": {
+                        "selectedMode": "REGULATED_PAID",
+                        "unregulatedType": "",
+                        "regulatedUnpaidType": ""
+                    },
+                    "maxLengthOfStayUnit": "HOURS",
+                    "maxLengthOfStayValue": 2.0,
+                    "freeParkingUnit": "MINUTES",
+                    "freeParkingValue": 0.0,
+                    "gracePeriod": 0,
+                    "rateCategory": "ANY",
+                    "listOfParkingSpaces": [{
+                            "id": "d74942c0-d8c8-4f09-97af-4d5d53bd2e0b",
+                            "legacyId": "800617",
+                            "bayNumber": "7",
+                            "latitude": -33.3494770148546,
+                            "longitude": 151.4923821394711
+                        },
+                        {
+                            "id": "70462d24-fa4d-45ee-a06d-75fc5fe64606",
+                            "legacyId": "800618",
+                            "bayNumber": "8",
+                            "latitude": -33.3494770148546,
+                            "longitude": 151.4923821394711
+                        },
+                        {
+                            "id": "84efaac5-9666-4f70-b2a9-11af3d989b4e",
+                            "legacyId": "800619",
+                            "bayNumber": "9",
+                            "latitude": -33.3494770148546,
+                            "longitude": 151.4923821394711
+                        },
+                        {
+                            "id": "aac879cb-0af9-46fe-80d0-9f5295ed06eb",
+                            "legacyId": "800620",
+                            "bayNumber": "10",
+                            "latitude": -33.3494770148546,
+                            "longitude": 151.4923821394711
+                        }
+                    ]
+                },
+                "errorCode": null
+            },
+            "selectedMode": "REGULATED_PAID",
+            "rateSetTimeValidFromTime": "03:00:00",
+            "rateSetTimeValidToTime": "18:00:00",
+            "maxLengthOfStayUnit": "HOURS",
+            "maxLengthOfStayValue": 2.0,
+            "rateSetLabel": "8 am - 6 pm, $4/hour, 2P, Mon - Sun"
+        },
+        "parkingSpaces": [{
+                "bdd": null,
+                "continue": "no",
+                "spaceId": "800617",
+                "complianceStatus": "Enforced",
+                "detail": {
+                    "occupancy": {
+                        "occupancyDateTime": "2021-10-18T03:00:00.0971638Z",
+                        "occupancyStatus": "Occupied",
+                        "occupancyTs": "1634016308532",
+                        "occupancyInTime": "03:00:00",
+                        "occupancyDetail": {
+                            "statusCode": 200,
+                            "url": "https://dev-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/secretcafe/cid/d8542508-1d91-4f35-b9fd-afbcfb1fe607/sid/800617.json",
+                            "requestTime": "2021-10-13T14:25:26.1688995Z",
+                            "responseTime": "2021-10-13T14:25:26.5405652Z",
+                            "response": {
+                                "PEMS": {
+                                    "occupancy": {
+                                        "customer": [{
+                                            "cid": "d8542508-1d91-4f35-b9fd-afbcfb1fe607",
+                                            "area": [{
+                                                "aid": "101",
+                                                "meter": [{
+                                                    "mid": "6001f19f-efac-4a7a-9d36-a1cd44e353c3",
+                                                    "space": [{
+                                                        "psid": "800617",
+                                                        "occupancyStatus": {
+                                                            "osId": 1,
+                                                            "osTs": 1634016308532,
+                                                            "expiryTs": 1634019908532
+                                                        }
+                                                    }]
+                                                }]
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }
+                        },
+                        "complianceCheckStatus": "Occupied"
+                    },
+                    "payment": {
+                        "paymentDetail": {
+                            "statusCode": 200,
+                            "url": "https://shareddevapimanagement.azure-api.net/qpl/payment/lookup?cid=d8542508-1d91-4f35-b9fd-afbcfb1fe607&code=secretcafe&spaceId=800617&key=10d4e07232c947c181d9314e8b4b2182",
+                            "requestTime": "2021-10-13T14:25:26.1622974Z",
+                            "responseTime": "2021-10-13T14:25:26.9405881Z",
+                            "response": {
+                                "customerId": "d8542508-1d91-4f35-b9fd-afbcfb1fe607",
+                                "lpn": "800617",
+                                "spaceId": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "paidDuration": 0,
+                                "zoneId": null,
+                                "zoneName": null,
+                                "meterId": null,
+                                "meterName": null,
+                                "parkingAreaName": null,
+                                "permits": null
+                            }
+                        },
+                        "paymentStartTime": null,
+                        "paymentEndTime": null,
+                        "complianceCheckStatus": null
+                    },
+                    "clearPin": {
+                        "clearPinDateTime": "2021-10-18T08:00:00.0971638Z",
+                        "complianceCheckStatus": "Enforced"
+                    },
+                    "regulatedSchedule": {
+                        "complianceCheckStatus": "Regulated"
+                    },
+                    "calculatedValues": null
+                }
+            },
+            {
+                "bdd": null,
+                "continue": "no",
+                "spaceId": "800618",
+                "complianceStatus": "Enforced",
+                "detail": {
+                    "occupancy": {
+                        "occupancyDateTime": "2021-10-18T04:00:08.5320000Z",
+                        "occupancyStatus": "Occupied",
+                        "occupancyTs": "1634016308532",
+                        "occupancyInTime": "03:00:00",
+                        "occupancyDetail": {
+                            "statusCode": 200,
+                            "url": "https://dev-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/secretcafe/cid/d8542508-1d91-4f35-b9fd-afbcfb1fe607/sid/800618.json",
+                            "requestTime": "2021-10-13T14:25:26.2031435Z",
+                            "responseTime": "2021-10-13T14:25:26.5518308Z",
+                            "response": {
+                                "PEMS": {
+                                    "occupancy": {
+                                        "customer": [{
+                                            "cid": "d8542508-1d91-4f35-b9fd-afbcfb1fe607",
+                                            "area": [{
+                                                "aid": "101",
+                                                "meter": [{
+                                                    "mid": "6001f19f-efac-4a7a-9d36-a1cd44e353c2",
+                                                    "space": [{
+                                                        "psid": "800618",
+                                                        "occupancyStatus": {
+                                                            "osId": 1,
+                                                            "osTs": 1634016308532,
+                                                            "expiryTs": 1634019908532
+                                                        }
+                                                    }]
+                                                }]
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }
+                        },
+                        "complianceCheckStatus": "Occupied"
+                    },
+                    "payment": {
+                        "paymentDetail": {
+                            "statusCode": 200,
+                            "url": "https://shareddevapimanagement.azure-api.net/qpl/payment/lookup?cid=d8542508-1d91-4f35-b9fd-afbcfb1fe607&code=secretcafe&spaceId=800618&key=10d4e07232c947c181d9314e8b4b2182",
+                            "requestTime": "2021-10-13T14:25:26.1963363Z",
+                            "responseTime": "2021-10-13T14:25:26.9602736Z",
+                            "response": {
+                                "customerId": "d8542508-1d91-4f35-b9fd-afbcfb1fe607",
+                                "lpn": "800618",
+                                "spaceId": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "paidDuration": 0,
+                                "zoneId": null,
+                                "zoneName": null,
+                                "meterId": null,
+                                "meterName": null,
+                                "parkingAreaName": null,
+                                "permits": null
+                            }
+                        },
+                        "paymentStartTime": null,
+                        "paymentEndTime": null,
+                        "complianceCheckStatus": null
+                    },
+                    "clearPin": {
+                        "clearPinDateTime": "2021-10-13T14:25:26.0971638Z",
+                        "complianceCheckStatus": "Enforced"
+                    },
+                    "regulatedSchedule": {
+                        "complianceCheckStatus": "Regulated"
+                    },
+                    "calculatedValues": null
+                }
+            },
+            {
+                "bdd": null,
+                "continue": "no",
+                "spaceId": "800619",
+                "complianceStatus": "Enforced",
+                "detail": {
+                    "occupancy": {
+                        "occupancyDateTime": "2021-10-18T03:49:29.3950000Z",
+                        "occupancyStatus": "Occupied",
+                        "occupancyTs": "1633942169395",
+                        "occupancyInTime": "03:00:00",
+                        "occupancyDetail": {
+                            "statusCode": 200,
+                            "url": "https://dev-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/secretcafe/cid/d8542508-1d91-4f35-b9fd-afbcfb1fe607/sid/800619.json",
+                            "requestTime": "2021-10-13T14:25:26.2262919Z",
+                            "responseTime": "2021-10-13T14:25:26.5856450Z",
+                            "response": {
+                                "PEMS": {
+                                    "occupancy": {
+                                        "customer": [{
+                                            "cid": "d8542508-1d91-4f35-b9fd-afbcfb1fe607",
+                                            "area": [{
+                                                "aid": "101",
+                                                "meter": [{
+                                                    "mid": "6001f19f-efac-4a7a-9d36-a1cd44e353c2",
+                                                    "space": [{
+                                                        "psid": "800619",
+                                                        "occupancyStatus": {
+                                                            "osId": 1,
+                                                            "osTs": 1633942169395,
+                                                            "expiryTs": 1633945769395
+                                                        }
+                                                    }]
+                                                }]
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }
+                        },
+                        "complianceCheckStatus": "Occupied"
+                    },
+                    "payment": {
+                        "paymentDetail": {
+                            "statusCode": 200,
+                            "url": "https://shareddevapimanagement.azure-api.net/qpl/payment/lookup?cid=d8542508-1d91-4f35-b9fd-afbcfb1fe607&code=secretcafe&spaceId=800619&key=10d4e07232c947c181d9314e8b4b2182",
+                            "requestTime": "2021-10-13T14:25:26.2200794Z",
+                            "responseTime": "2021-10-13T14:25:27.2178614Z",
+                            "response": {
+                                "customerId": "d8542508-1d91-4f35-b9fd-afbcfb1fe607",
+                                "lpn": "800619",
+                                "spaceId": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "paidDuration": 0,
+                                "zoneId": null,
+                                "zoneName": null,
+                                "meterId": null,
+                                "meterName": null,
+                                "parkingAreaName": null,
+                                "permits": null
+                            }
+                        },
+                        "paymentStartTime": null,
+                        "paymentEndTime": null,
+                        "complianceCheckStatus": null
+                    },
+                    "clearPin": {
+                        "clearPinDateTime": "2021-10-13T14:25:26.0971638Z",
+                        "complianceCheckStatus": "Enforced"
+                    },
+                    "regulatedSchedule": {
+                        "complianceCheckStatus": "Regulated"
+                    },
+                    "calculatedValues": null
+                }
+            },
+            {
+                "bdd": null,
+                "continue": "no",
+                "spaceId": "800620",
+                "complianceStatus": "Enforced",
+                "detail": {
+                    "occupancy": {
+                        "occupancyDateTime": "2021-10-18T02:00:29.3950000Z",
+                        "occupancyStatus": "Occupied",
+                        "occupancyTs": "1633942169395",
+                        "occupancyInTime": "03:00:00",
+                        "occupancyDetail": {
+                            "statusCode": 200,
+                            "url": "https://dev-pems-eiv3occupancy-func.azurewebsites.net/api/pemsei/occupancy/v1/code/secretcafe/cid/d8542508-1d91-4f35-b9fd-afbcfb1fe607/sid/800620.json",
+                            "requestTime": "2021-10-13T14:25:26.4293953Z",
+                            "responseTime": "2021-10-13T14:25:26.6448192Z",
+                            "response": {
+                                "PEMS": {
+                                    "occupancy": {
+                                        "customer": [{
+                                            "cid": "d8542508-1d91-4f35-b9fd-afbcfb1fe607",
+                                            "area": [{
+                                                "aid": "101",
+                                                "meter": [{
+                                                    "mid": "6001f19f-efac-4a7a-9d36-a1cd44e353c2",
+                                                    "space": [{
+                                                        "psid": "800620",
+                                                        "occupancyStatus": {
+                                                            "osId": 1,
+                                                            "osTs": 1633942169395,
+                                                            "expiryTs": 1633945769395
+                                                        }
+                                                    }]
+                                                }]
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }
+                        },
+                        "complianceCheckStatus": "Occupied"
+                    },
+                    "payment": {
+                        "paymentDetail": {
+                            "statusCode": 200,
+                            "url": "https://shareddevapimanagement.azure-api.net/qpl/payment/lookup?cid=d8542508-1d91-4f35-b9fd-afbcfb1fe607&code=secretcafe&spaceId=800620&key=10d4e07232c947c181d9314e8b4b2182",
+                            "requestTime": "2021-10-13T14:25:26.4295508Z",
+                            "responseTime": "2021-10-13T14:25:27.2600802Z",
+                            "response": {
+                                "customerId": "d8542508-1d91-4f35-b9fd-afbcfb1fe607",
+                                "lpn": "800620",
+                                "spaceId": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "paidDuration": 0,
+                                "zoneId": null,
+                                "zoneName": null,
+                                "meterId": null,
+                                "meterName": null,
+                                "parkingAreaName": null,
+                                "permits": null
+                            }
+                        },
+                        "paymentStartTime": null,
+                        "paymentEndTime": null,
+                        "complianceCheckStatus": null
+                    },
+                    "clearPin": {
+                        "clearPinDateTime": "2021-10-13T14:25:26.0971638Z",
+                        "complianceCheckStatus": "Enforced"
+                    },
+                    "regulatedSchedule": {
+                        "complianceCheckStatus": "Regulated"
+                    },
+                    "calculatedValues": null
+                }
+            }
+        ]
+    }],
+    "responseTime": "2021-10-27T08:12:43.2898778Z"
+}

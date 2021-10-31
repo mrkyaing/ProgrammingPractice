@@ -3,7 +3,8 @@ class Factorial
 {
 static void Main()
 {
-    Console.Write("Enter a Number:");
+   try{
+        Console.Write("Enter a Number:");
     int num=Convert.ToInt32(Console.ReadLine());//4!=1*2*3*4
     int result=1;
     int i=1;
@@ -13,5 +14,9 @@ static void Main()
     i++;
     }
     Console.WriteLine("The Facorial of "+num +" is "+result);
+   }
+   catch(Exception e){
+       Console.WriteLine("Humm......Sorry we cannot calculate your input value!!");
+   }
 }
 }
