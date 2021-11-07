@@ -5,10 +5,25 @@ using StaffInfo;
 namespace HR {
     class HRSystem {
         public static void Main () {
+            try
+            {
             Console.WriteLine ("HR System");
             Staff staff1=new Staff();
             staff1.Id="s001";
+            staff1.Age=30;
             Console.WriteLine("Staff Id:{0}",staff1.Id);//s001
+            Console.WriteLine("Staff Age:{0}",staff1.Age);//30
+             Staff staff2=new Staff();
+            staff1.Id="s002";
+            staff1.Age=-10;
+            Console.WriteLine("Staff Id:{0}",staff1.Id);//s001
+            Console.WriteLine("Staff Age:{0}",staff1.Age);//30
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Sorry error occur");
+                Console.WriteLine("Error Message:"+e.Message);
+            }
         }
     }
 }
@@ -35,6 +50,18 @@ namespace StaffInfo {
             }
             set {
                 name = value;
+            }
+        }
+
+        public int Age{
+            get{
+             return age;
+            }
+            set{
+              if(value<0){
+             throw new ArgumentException("invalid age value");
+              }
+              age=value;
             }
         }
     }
