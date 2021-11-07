@@ -14,10 +14,10 @@ namespace HR {
             Console.WriteLine("Staff Id:{0}",staff1.Id);//s001
             Console.WriteLine("Staff Age:{0}",staff1.Age);//30
              Staff staff2=new Staff();
-            staff1.Id="s002";
-            staff1.Age=-10;
-            Console.WriteLine("Staff Id:{0}",staff1.Id);//s001
-            Console.WriteLine("Staff Age:{0}",staff1.Age);//30
+            staff2.Id="s002";
+            staff2.Age=-10;//Error 
+            Console.WriteLine("Staff Id:{0}",staff2.Id);//s002
+            Console.WriteLine("Staff Age:{0}",staff2.Age);//30
             }
             catch (Exception e)
             {
@@ -32,7 +32,7 @@ namespace StaffInfo {
         private string id, name, email, phone;
         private int age;
         private DateTime joinedDate;
-        //a property to get/set id value 
+        //a property to get/set private id value 
         public string Id {
             get {
                 return id;
@@ -44,6 +44,7 @@ namespace StaffInfo {
                 id = value;
             }
         }
+         //a property to get/set private name value 
         public string Name {
             get {
                 return name;
@@ -52,7 +53,7 @@ namespace StaffInfo {
                 name = value;
             }
         }
-
+ //a property to get/set private age value 
         public int Age{
             get{
              return age;
