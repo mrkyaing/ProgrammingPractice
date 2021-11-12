@@ -1,0 +1,8 @@
+E:\YCI-Proj\YCI\YCI\bin\Debug\YCI.exe.config
+E:\YCI-Proj\YCI\YCI\bin\Debug\YCI.exe
+E:\YCI-Proj\YCI\YCI\bin\Debug\YCI.pdb
+E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.csproj.AssemblyReference.cache
+E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.csproj.SuggestedBindingRedirects.cache
+E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.csproj.CoreCompileInputs.cache
+E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.exe
+E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.pdb
