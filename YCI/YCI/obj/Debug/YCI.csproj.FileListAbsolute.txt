@@ -6,3 +6,11 @@ E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.csproj.SuggestedBindingRedirects.cache
 E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.csproj.CoreCompileInputs.cache
 E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.exe
 E:\YCI-Proj\YCI\YCI\obj\Debug\YCI.pdb
+E:\LearnProgramming\YCI\YCI\bin\Debug\YCI.exe.config
+E:\LearnProgramming\YCI\YCI\bin\Debug\YCI.exe
+E:\LearnProgramming\YCI\YCI\bin\Debug\YCI.pdb
+E:\LearnProgramming\YCI\YCI\obj\Debug\YCI.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\YCI\obj\Debug\YCI.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\YCI\obj\Debug\YCI.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\YCI\obj\Debug\YCI.exe
+E:\LearnProgramming\YCI\YCI\obj\Debug\YCI.pdb

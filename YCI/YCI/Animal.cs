@@ -1,23 +1,39 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace YCI
 {
     public class Animal
     {
-        public virtual void Eat()
+        private string name, color, livingplace;
+        public string Name
         {
-            Console.WriteLine("eating");
+            get { return name; }
+            set { name = value; }
         }
-        public  void Sleep()
+        public string Color
         {
-            Console.WriteLine("sleeping");
+            get { return color; }
+            set { color = value; }
         }
-        public virtual void Sound() 
-        { 
-            Console.WriteLine("speaking"); 
+        public string Livingplace { 
+            get { return livingplace; }
+            set { livingplace = value; }
+        }
+        public void Eat()
+        {
+            Console.WriteLine("{0} is eating.", name);
+        }
+        public void Sleep()
+        {
+            Console.WriteLine("{0} is sleeping.", name);
         }
         public void Walk()
         {
-            Console.WriteLine("walking!");
+            Console.WriteLine("{0} is walking.", name);
         }
     }
 }

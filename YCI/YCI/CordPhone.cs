@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace YCI
 {
-    public class Cat:Animal
+    public class CordPhone:Phone
     {
-        public void Sound()
+        public void UseModern()
         {
-            Console.WriteLine("Meow.Meow..Weow...");
+            Console.WriteLine("use modern to use internet.");
         }
     }
 }

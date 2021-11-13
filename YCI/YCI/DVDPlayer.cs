@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace YCI
 {
-    public class Cat:Animal
+    public class DVDPlayer:SoundSystem
     {
-        public void Sound()
-        {
-            Console.WriteLine("Meow.Meow..Weow...");
-        }
     }
 }

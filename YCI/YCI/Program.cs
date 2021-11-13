@@ -1,47 +1,56 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YCI
 {
      class Program
     {
         static void Main(string[] args)
-        {
-            try
-            {
-                Console.WriteLine("Hi");
-                User user = new User()
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    Name = "mgmg",
-                    Email = "mgmg@gmail.com",
-                    LoginedDate = DateTime.Now,
-                };
-                User user1 = new User();
-                user1.Id = Guid.NewGuid().ToString();
-                user1.Name = "Test";
-                user1.Email = "Test";
-                user1.LoginedDate = DateTime.Now;
-                user.PrintUserInfo();
-                user1.PrintUserInfo();
-                Dog dog = new Dog();
-                dog.Sleep();
-                dog.Eat();
-                dog.Bark();
-                Cat cat= new Cat();
-                cat.Sleep();
-                cat.Eat();
-                cat.Sound();
-                Console.ReadKey();
-            }
-            catch (Exception e)
-            {
+        {     
+            Console.WriteLine("Hi");
+            
+            Dog dog=new Dog();
+            dog.Name = "picky";
+            dog.Color = "black";
+            dog.Livingplace = "my house";
+            dog.Eat();//picky is eating .
+            dog.Sleep();//picky is sleeping.
+            dog.Walk();//picky is walking.
+            dog.Sound();//Woak.
 
-                Console.WriteLine("Error:{0}", e.Message);
-            }
+            Cat cat=new Cat();
+            cat.Name = "puccy";
+            cat.Color = "red";
+            cat.Livingplace = "your house";
+            cat.Eat();
+            cat.Sleep();
+            cat.Walk();
+            cat.Sound();
+
+            SmartPhone iphone=new SmartPhone();
+            iphone.Color = "black";
+            iphone.MandeBy = "apple";
+            iphone.ManufacturedDate =Convert.ToDateTime("10-12-2019");
+            iphone.Type = "single sim";
+            iphone.PowerOn();
+            iphone.PowerOff();
+            iphone.UseMobileData();
+            iphone.MakeDial();
+            iphone.TakeCamera("image");
+            iphone.ShowSpecification();
+            SmartPhone sony = new SmartPhone()
+            {
+                Color="blue",
+                MandeBy="Sony",
+                ManufacturedDate=Convert.ToDateTime("12-10-2020"),
+                Type="dual sim"
+            };
+            sony.SendSMS();
+            sony.MakeDial();
+            sony.TakeCamera("video");
+            sony.ShowSpecification();
+            
+            Console.WriteLine("Press any key to close this window");
+            Console.ReadKey();
         }
     }
 }
