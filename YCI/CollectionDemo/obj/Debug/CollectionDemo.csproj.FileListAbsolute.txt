@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\CollectionDemo\bin\Debug\CollectionDemo.exe.config
+E:\LearnProgramming\YCI\CollectionDemo\bin\Debug\CollectionDemo.exe
+E:\LearnProgramming\YCI\CollectionDemo\bin\Debug\CollectionDemo.pdb
+E:\LearnProgramming\YCI\CollectionDemo\obj\Debug\CollectionDemo.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\CollectionDemo\obj\Debug\CollectionDemo.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\CollectionDemo\obj\Debug\CollectionDemo.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\CollectionDemo\obj\Debug\CollectionDemo.exe
+E:\LearnProgramming\YCI\CollectionDemo\obj\Debug\CollectionDemo.pdb

@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\ProDev\bin\Debug\ProDev.exe.config
+E:\LearnProgramming\YCI\ProDev\bin\Debug\ProDev.exe
+E:\LearnProgramming\YCI\ProDev\bin\Debug\ProDev.pdb
+E:\LearnProgramming\YCI\ProDev\obj\Debug\ProDev.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\ProDev\obj\Debug\ProDev.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\ProDev\obj\Debug\ProDev.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\ProDev\obj\Debug\ProDev.exe
+E:\LearnProgramming\YCI\ProDev\obj\Debug\ProDev.pdb
