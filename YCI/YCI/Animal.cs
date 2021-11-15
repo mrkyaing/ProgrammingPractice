@@ -23,7 +23,9 @@ namespace YCI
             get { return livingplace; }
             set { livingplace = value; }
         }
-        public void Eat()
+
+        //Eat method is allowed to override his child class.
+        public virtual void Eat()
         {
             Console.WriteLine("{0} is eating.", name);
         }
@@ -34,6 +36,13 @@ namespace YCI
         public void Walk()
         {
             Console.WriteLine("{0} is walking.", name);
+        }
+
+        public void DisplayAnimalInfo()
+        {
+            Console.WriteLine("Name:{0}", name);//string indexing pattern >>{0}
+            Console.WriteLine("Color:" +color);//string concatenation pattern>> + 
+            Console.WriteLine($"Living Place:{livingplace}");//string interpolation pattern >> $""
         }
     }
 }

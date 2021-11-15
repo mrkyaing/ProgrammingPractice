@@ -49,6 +49,26 @@ namespace YCI
             sony.TakeCamera("video");
             sony.ShowSpecification();
             
+            Lion lion = new Lion();
+            lion.Color = "blue";
+            lion.Name = "kathayar";
+            lion.Eat();//kathayar lion eal meal.
+            lion.DisplayAnimalInfo();
+
+            Cat yourcat = new Cat();
+            yourcat.Name = "juccy";
+            yourcat.Eat();//juccy is eating .
+            yourcat.DisplayAnimalInfo();
+            
+            Cow cow = new Cow();
+            cow.Name = "junny";
+            cow.Color = "white";
+            cow.Livingplace = "forest";
+            cow.Eat();
+            cow.Sleep();
+            cow.Walk();
+            cow.DisplayAnimalInfo();
+
             Console.WriteLine("Press any key to close this window");
             Console.ReadKey();
         }

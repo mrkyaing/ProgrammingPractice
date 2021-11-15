@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\IOOperationsDemo\bin\Debug\IOOperationsDemo.exe.config
+E:\LearnProgramming\YCI\IOOperationsDemo\bin\Debug\IOOperationsDemo.exe
+E:\LearnProgramming\YCI\IOOperationsDemo\bin\Debug\IOOperationsDemo.pdb
+E:\LearnProgramming\YCI\IOOperationsDemo\obj\Debug\IOOperationsDemo.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\IOOperationsDemo\obj\Debug\IOOperationsDemo.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\IOOperationsDemo\obj\Debug\IOOperationsDemo.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\IOOperationsDemo\obj\Debug\IOOperationsDemo.exe
+E:\LearnProgramming\YCI\IOOperationsDemo\obj\Debug\IOOperationsDemo.pdb

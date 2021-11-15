@@ -20,7 +20,22 @@
       "ProjectGuid": "13f34562-4aac-4478-aed8-a6ccf9366edd",
       "DisplayName": "CollectionDemo",
       "ColorIndex": 2
+    },
+    "ff32faf8-26e0-4720-8eed-536a3adf2f6c": {
+      "ProjectGuid": "ff32faf8-26e0-4720-8eed-536a3adf2f6c",
+      "DisplayName": "PolymorphismDemo",
+      "ColorIndex": 3
+    },
+    "45056766-e9a5-411b-8a9d-992b7327a0c9": {
+      "ProjectGuid": "45056766-e9a5-411b-8a9d-992b7327a0c9",
+      "DisplayName": "GenericDemo",
+      "ColorIndex": 4
+    },
+    "b69d8cd8-dfbe-48b1-a57a-0e9bc3b52f1d": {
+      "ProjectGuid": "b69d8cd8-dfbe-48b1-a57a-0e9bc3b52f1d",
+      "DisplayName": "IOOperationsDemo",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 6
 }

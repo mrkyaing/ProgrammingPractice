@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\GenericDemo\bin\Debug\GenericDemo.exe.config
+E:\LearnProgramming\YCI\GenericDemo\bin\Debug\GenericDemo.exe
+E:\LearnProgramming\YCI\GenericDemo\bin\Debug\GenericDemo.pdb
+E:\LearnProgramming\YCI\GenericDemo\obj\Debug\GenericDemo.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\GenericDemo\obj\Debug\GenericDemo.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\GenericDemo\obj\Debug\GenericDemo.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\GenericDemo\obj\Debug\GenericDemo.exe
+E:\LearnProgramming\YCI\GenericDemo\obj\Debug\GenericDemo.pdb
