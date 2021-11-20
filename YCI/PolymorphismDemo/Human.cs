@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PolymorphismDemo
 {
-    internal class Human : Mammal
+     class Human : Mammal
     {
         public string BloodType { get; set; }
         public string NRC { get; set; }

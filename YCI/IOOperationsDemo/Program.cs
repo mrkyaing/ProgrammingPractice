@@ -20,6 +20,13 @@ namespace IOOperationsDemo
                WriteToTextFile writeToTextFile=new WriteToTextFile();
                writeToTextFile.WriteData(filepath, "Hi,today is " + DateTime.Now.ToString());
                ReadDirectoryInfo(@"C:\");
+
+                string brfilepath = @"E:\\me.dat";
+                BinaryWriter(brfilepath);
+                BinaryReader(brfilepath);
+                GetFileInfo();
+                string copyfilepath = @"E:\\youani.txt";
+                CopyMyFile(filepath, copyfilepath);
             }
             catch (Exception e)
             {
@@ -30,9 +37,23 @@ namespace IOOperationsDemo
                 if (data != null)
                  data.Close();
             }
+            Console.WriteLine("Press any kay to close this window");
             Console.ReadKey();
         }
-
+        public  static void BinaryWriter(string filepath)
+        {
+            using(BinaryWriter bw=new BinaryWriter(File.Open(filepath, FileMode.Create)))
+            {
+                bw.Write(2.3);                
+            }
+        }
+        static void BinaryReader(string filepath)
+        {
+            using (BinaryReader br = new BinaryReader(File.Open(filepath, FileMode.Open)))
+            {
+                Console.WriteLine(br.ReadDouble());
+            }
+        }
         public static void ReadDirectoryInfo(string path)
         {
             var dirinfo=new DirectoryInfo(path);
@@ -47,22 +68,27 @@ namespace IOOperationsDemo
                 Console.WriteLine(file.Name);
             }
         }
-    }
-    /*
-    ==========================================================================
-    Topic :What is ICT & Gateway to industry with IT & Computer Science Degree 
-    ==========================================================================
-    Profile of me
-    Mg Kyaing
-    a Software Engineer 
-    B.C.Sc(Hons;)-UCSM
-    Specialized ICT Trends :Azure Cloud,Software Engineering ,DevOps ICT Solutions ,Contribute ICT Knowledge to Society
-    website  :https://mrkyaing.github.io/profile/
-    linkedin :https://www.linkedin.com/in/mg-kyaing/
-    facebook :https://www.facebook.com/mr.kyaing/
-    github   :https://github.com/mrkyaing
-    email :mr.kyaing7@gmail.com
-    phone :+959 2562 753 19
-    */
 
+        public static void CopyMyFile(string frompath,string topath)
+        {
+            File.Copy(frompath, topath);
+        }
+
+        public static void GetFileInfo()
+        {
+            FileInfo info = new FileInfo(@"E:\\ProjectOne.approj");
+            FileAttributes attributes = info.Attributes;
+            DateTime time = info.CreationTime;
+            Console.WriteLine($"file attribute:{attributes}");
+            Console.WriteLine($"file created Time:{time}");
+            time = info.LastAccessTime;
+            Console.WriteLine($"file last access Time:{time}");
+            Console.WriteLine($"file name:{info.Name}");
+            Console.WriteLine($"file size:{info.Length} byte");
+            info = new FileInfo(@"C:\\");
+            attributes = info.Attributes;
+            Console.WriteLine(attributes);
+        }
+
+    }
 }
