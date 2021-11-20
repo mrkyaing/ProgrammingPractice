@@ -21,13 +21,15 @@ namespace PolymorphismDemo
             int result = n1 + n2 + n3;
             Console.WriteLine($"three int value adding result is{result}");
         }
-
         public void Add(double n1,double n2)
         {
             double result = n1 + n2;
             Console.WriteLine($"two double value adding result is{result}");
         }
-
-       
+        public void Add(double n1, int n2)
+        {
+            double result = n1 + n2;
+            Console.WriteLine($"two double value adding result is{result}");
+        }
     }
 }

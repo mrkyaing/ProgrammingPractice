@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDemo", "GenericDemo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOOperationsDemo", "IOOperationsDemo\IOOperationsDemo.csproj", "{B69D8CD8-DFBE-48B1-A57A-0E9BC3B52F1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS", "HRMS\HRMS.csproj", "{A6EB9705-4775-45A7-8B9D-535A4704FEF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractionDemo", "AbstractionDemo\AbstractionDemo.csproj", "{4A126419-F56A-47E6-B2D7-A934FD721988}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{B69D8CD8-DFBE-48B1-A57A-0E9BC3B52F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B69D8CD8-DFBE-48B1-A57A-0E9BC3B52F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B69D8CD8-DFBE-48B1-A57A-0E9BC3B52F1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6EB9705-4775-45A7-8B9D-535A4704FEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6EB9705-4775-45A7-8B9D-535A4704FEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6EB9705-4775-45A7-8B9D-535A4704FEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6EB9705-4775-45A7-8B9D-535A4704FEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A126419-F56A-47E6-B2D7-A934FD721988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A126419-F56A-47E6-B2D7-A934FD721988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A126419-F56A-47E6-B2D7-A934FD721988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A126419-F56A-47E6-B2D7-A934FD721988}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

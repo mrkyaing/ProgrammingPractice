@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\AbstractionDemo\bin\Debug\AbstractionDemo.exe.config
+E:\LearnProgramming\YCI\AbstractionDemo\bin\Debug\AbstractionDemo.exe
+E:\LearnProgramming\YCI\AbstractionDemo\bin\Debug\AbstractionDemo.pdb
+E:\LearnProgramming\YCI\AbstractionDemo\obj\Debug\AbstractionDemo.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\AbstractionDemo\obj\Debug\AbstractionDemo.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\AbstractionDemo\obj\Debug\AbstractionDemo.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\AbstractionDemo\obj\Debug\AbstractionDemo.exe
+E:\LearnProgramming\YCI\AbstractionDemo\obj\Debug\AbstractionDemo.pdb

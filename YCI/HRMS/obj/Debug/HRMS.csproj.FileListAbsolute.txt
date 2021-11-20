@@ -1,0 +1,11 @@
+E:\LearnProgramming\YCI\HRMS\bin\Debug\HRMS.exe.config
+E:\LearnProgramming\YCI\HRMS\bin\Debug\HRMS.exe
+E:\LearnProgramming\YCI\HRMS\bin\Debug\HRMS.pdb
+E:\LearnProgramming\YCI\HRMS\obj\Debug\HRMS.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\HRMS\obj\Debug\HRMS.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\HRMS\obj\Debug\HRMS.Dashboard.resources
+E:\LearnProgramming\YCI\HRMS\obj\Debug\HRMS.Properties.Resources.resources
+E:\LearnProgramming\YCI\HRMS\obj\Debug\HRMS.csproj.GenerateResource.cache
+E:\LearnProgramming\YCI\HRMS\obj\Debug\HRMS.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\HRMS\obj\Debug\HRMS.exe
+E:\LearnProgramming\YCI\HRMS\obj\Debug\HRMS.pdb

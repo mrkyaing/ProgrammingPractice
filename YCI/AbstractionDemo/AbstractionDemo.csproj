@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF32FAF8-26E0-4720-8EED-536A3ADF2F6C}</ProjectGuid>
+    <ProjectGuid>{4A126419-F56A-47E6-B2D7-A934FD721988}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PolymorphismDemo</RootNamespace>
-    <AssemblyName>PolymorphismDemo</AssemblyName>
+    <RootNamespace>AbstractionDemo</RootNamespace>
+    <AssemblyName>AbstractionDemo</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="Cat.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="Human.cs" />
-    <Compile Include="Mammal.cs" />
+    <Compile Include="AlertDialogWindow.cs" />
+    <Compile Include="ErrorDialogWindow.cs" />
+    <Compile Include="IPayrollService.cs" />
+    <Compile Include="PayrollService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WarnningDialogWindow.cs" />
+    <Compile Include="Window.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

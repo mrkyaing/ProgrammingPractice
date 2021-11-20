@@ -11,5 +11,6 @@ class app{
         Console.WriteLine(average);//0
         average = (average * 212 + number + 8231)/ 40;
         Console.WriteLine(average);//205
+
     }
 }

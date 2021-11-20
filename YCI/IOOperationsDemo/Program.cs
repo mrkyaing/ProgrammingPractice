@@ -48,4 +48,21 @@ namespace IOOperationsDemo
             }
         }
     }
+    /*
+    ==========================================================================
+    Topic :What is ICT & Gateway to industry with IT & Computer Science Degree 
+    ==========================================================================
+    Profile of me
+    Mg Kyaing
+    a Software Engineer 
+    B.C.Sc(Hons;)-UCSM
+    Specialized ICT Trends :Azure Cloud,Software Engineering ,DevOps ICT Solutions ,Contribute ICT Knowledge to Society
+    website  :https://mrkyaing.github.io/profile/
+    linkedin :https://www.linkedin.com/in/mg-kyaing/
+    facebook :https://www.facebook.com/mr.kyaing/
+    github   :https://github.com/mrkyaing
+    email :mr.kyaing7@gmail.com
+    phone :+959 2562 753 19
+    */
+
 }

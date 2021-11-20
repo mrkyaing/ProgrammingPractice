@@ -35,7 +35,12 @@
       "ProjectGuid": "b69d8cd8-dfbe-48b1-a57a-0e9bc3b52f1d",
       "DisplayName": "IOOperationsDemo",
       "ColorIndex": 5
+    },
+    "a6eb9705-4775-45a7-8b9d-535a4704fef8": {
+      "ProjectGuid": "a6eb9705-4775-45a7-8b9d-535a4704fef8",
+      "DisplayName": "HRMS",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

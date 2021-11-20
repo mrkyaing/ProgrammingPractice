@@ -73,6 +73,9 @@ namespace CollectionDemo
             //select top 1 * from studnet where id=1;
             Student student1=students.Where(s=>s.Id==1).FirstOrDefault();
             student1.PrintStudentInfo();
+
+            
+
             Console.ReadKey();
         }
     }
