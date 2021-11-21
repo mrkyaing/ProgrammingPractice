@@ -40,7 +40,12 @@
       "ProjectGuid": "a6eb9705-4775-45a7-8b9d-535a4704fef8",
       "DisplayName": "HRMS",
       "ColorIndex": 6
+    },
+    "4a126419-f56a-47e6-b2d7-a934fd721988": {
+      "ProjectGuid": "4a126419-f56a-47e6-b2d7-a934fd721988",
+      "DisplayName": "AbstractionDemo",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 8
 }

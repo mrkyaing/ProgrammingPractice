@@ -9,7 +9,7 @@ namespace AbstractionDemo
     public interface IPayrollService
     {
         //abstract method 
-       void CalculatePayroll();
-       void CalculateBonus();
+       double CalculatePayroll(Staff staff);//passing object paremeter 
+       void CalculateBonus(Staff staff);
     }
 }

@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace AbstractionDemo
 {
-    internal class PayrollService : IPayrollService
+    public class PayrollService : IPayrollService
     {
-        public void CalculateBonus()
+        public void CalculateBonus(Staff staff)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Bouns amount of this month is 30000");
         }
 
-        public void CalculatePayroll()
+        public double CalculatePayroll(Staff staff)
         {
-            throw new NotImplementedException();
+            //တစ်ရက်စာ amout ရှာ .ရုံးတက်ရက်နဲ့ ပြန် *
+            int workingday = 31;
+            int attendancedays = 31;
+            double totalAmout = (staff.BaseSalary / workingday) * attendancedays;
+            Console.WriteLine($"Total Pay amount of this Month is {totalAmout}");
+            return totalAmout;
         }
     }
 }
