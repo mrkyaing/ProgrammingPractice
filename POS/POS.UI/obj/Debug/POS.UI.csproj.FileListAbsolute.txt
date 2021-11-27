@@ -1,0 +1,39 @@
+D:\My Training\POS\POS.UI\bin\Debug\POS.UI.exe.config
+D:\My Training\POS\POS.UI\bin\Debug\POS.UI.exe
+D:\My Training\POS\POS.UI\bin\Debug\POS.UI.pdb
+D:\My Training\POS\POS.UI\bin\Debug\POS.BusinessLogic.dll
+D:\My Training\POS\POS.UI\bin\Debug\POS.Models.dll
+D:\My Training\POS\POS.UI\bin\Debug\POS.Utilities.dll
+D:\My Training\POS\POS.UI\bin\Debug\POS.DAL.dll
+D:\My Training\POS\POS.UI\bin\Debug\POS.BusinessLogic.pdb
+D:\My Training\POS\POS.UI\bin\Debug\POS.Models.pdb
+D:\My Training\POS\POS.UI\bin\Debug\POS.Utilities.pdb
+D:\My Training\POS\POS.UI\bin\Debug\POS.DAL.pdb
+D:\My Training\POS\POS.UI\obj\Debug\POS.UI.csprojResolveAssemblyReference.cache
+D:\My Training\POS\POS.UI\obj\Debug\POS.UI.Properties.Resources.resources
+D:\My Training\POS\POS.UI\obj\Debug\POS.UI.UserUI.resources
+D:\My Training\POS\POS.UI\obj\Debug\POS.UI.csproj.GenerateResource.Cache
+D:\My Training\POS\POS.UI\obj\Debug\POS.UI.exe
+D:\My Training\POS\POS.UI\obj\Debug\POS.UI.pdb
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.UI.exe.config
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.UI.exe
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.UI.pdb
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.BusinessLogic.dll
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.Models.dll
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.Utilities.dll
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.DAL.dll
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.BusinessLogic.pdb
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.Models.pdb
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.Utilities.pdb
+E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.DAL.pdb
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.csproj.AssemblyReference.cache
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.Properties.Resources.resources
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UserUI.resources
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.csproj.GenerateResource.cache
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.csproj.CopyComplete
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.exe
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.pdb
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.DashboardUI.resources
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UserListUI.resources

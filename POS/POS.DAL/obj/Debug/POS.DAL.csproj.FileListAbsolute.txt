@@ -1,0 +1,20 @@
+D:\My Training\POS\POS.DAL\bin\Debug\POS.DAL.dll
+D:\My Training\POS\POS.DAL\bin\Debug\POS.DAL.pdb
+D:\My Training\POS\POS.DAL\bin\Debug\POS.Models.dll
+D:\My Training\POS\POS.DAL\bin\Debug\POS.Utilities.dll
+D:\My Training\POS\POS.DAL\bin\Debug\POS.Models.pdb
+D:\My Training\POS\POS.DAL\bin\Debug\POS.Utilities.pdb
+D:\My Training\POS\POS.DAL\obj\Debug\POS.DAL.csprojResolveAssemblyReference.cache
+D:\My Training\POS\POS.DAL\obj\Debug\POS.DAL.dll
+D:\My Training\POS\POS.DAL\obj\Debug\POS.DAL.pdb
+E:\LearnProgramming\POS\POS.DAL\bin\Debug\POS.DAL.dll
+E:\LearnProgramming\POS\POS.DAL\bin\Debug\POS.DAL.pdb
+E:\LearnProgramming\POS\POS.DAL\bin\Debug\POS.Models.dll
+E:\LearnProgramming\POS\POS.DAL\bin\Debug\POS.Utilities.dll
+E:\LearnProgramming\POS\POS.DAL\bin\Debug\POS.Models.pdb
+E:\LearnProgramming\POS\POS.DAL\bin\Debug\POS.Utilities.pdb
+E:\LearnProgramming\POS\POS.DAL\obj\Debug\POS.DAL.csproj.AssemblyReference.cache
+E:\LearnProgramming\POS\POS.DAL\obj\Debug\POS.DAL.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\POS\POS.DAL\obj\Debug\POS.DAL.csproj.CopyComplete
+E:\LearnProgramming\POS\POS.DAL\obj\Debug\POS.DAL.dll
+E:\LearnProgramming\POS\POS.DAL\obj\Debug\POS.DAL.pdb

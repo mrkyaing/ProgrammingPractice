@@ -1,0 +1,16 @@
+D:\My Training\POS\POS.Models\bin\Debug\POS.Models.dll
+D:\My Training\POS\POS.Models\bin\Debug\POS.Models.pdb
+D:\My Training\POS\POS.Models\bin\Debug\POS.Utilities.dll
+D:\My Training\POS\POS.Models\bin\Debug\POS.Utilities.pdb
+D:\My Training\POS\POS.Models\obj\Debug\POS.Models.csprojResolveAssemblyReference.cache
+D:\My Training\POS\POS.Models\obj\Debug\POS.Models.dll
+D:\My Training\POS\POS.Models\obj\Debug\POS.Models.pdb
+E:\LearnProgramming\POS\POS.Models\bin\Debug\POS.Models.dll
+E:\LearnProgramming\POS\POS.Models\bin\Debug\POS.Models.pdb
+E:\LearnProgramming\POS\POS.Models\bin\Debug\POS.Utilities.dll
+E:\LearnProgramming\POS\POS.Models\bin\Debug\POS.Utilities.pdb
+E:\LearnProgramming\POS\POS.Models\obj\Debug\POS.Models.csproj.AssemblyReference.cache
+E:\LearnProgramming\POS\POS.Models\obj\Debug\POS.Models.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\POS\POS.Models\obj\Debug\POS.Models.csproj.CopyComplete
+E:\LearnProgramming\POS\POS.Models\obj\Debug\POS.Models.dll
+E:\LearnProgramming\POS\POS.Models\obj\Debug\POS.Models.pdb
