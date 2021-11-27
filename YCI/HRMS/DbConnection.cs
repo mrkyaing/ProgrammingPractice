@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.Data.SqlClient;
 namespace HRMS
 {
     public class DbConnection
@@ -18,7 +12,7 @@ namespace HRMS
                 conn.Open();
                 return conn;
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 throw ex;
             }

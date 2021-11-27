@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\DataStructureDemo\bin\Debug\DataStructureDemo.exe.config
+E:\LearnProgramming\YCI\DataStructureDemo\bin\Debug\DataStructureDemo.exe
+E:\LearnProgramming\YCI\DataStructureDemo\bin\Debug\DataStructureDemo.pdb
+E:\LearnProgramming\YCI\DataStructureDemo\obj\Debug\DataStructureDemo.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\DataStructureDemo\obj\Debug\DataStructureDemo.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\DataStructureDemo\obj\Debug\DataStructureDemo.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\DataStructureDemo\obj\Debug\DataStructureDemo.exe
+E:\LearnProgramming\YCI\DataStructureDemo\obj\Debug\DataStructureDemo.pdb

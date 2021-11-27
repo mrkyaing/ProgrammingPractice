@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace YCI
 {
@@ -68,7 +69,8 @@ namespace YCI
             cow.Sleep();
             cow.Walk();
             cow.DisplayAnimalInfo();
-
+            foreach (Card c in Card.allSpades)
+                Console.WriteLine(c);        
             Console.WriteLine("Press any key to close this window");
             Console.ReadKey();
         }

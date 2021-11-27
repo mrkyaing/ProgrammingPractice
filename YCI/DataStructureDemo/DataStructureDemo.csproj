@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7FD1DD5B-A478-43EF-B6B9-DE14571B29D7}</ProjectGuid>
+    <ProjectGuid>{F4B8A8F1-A298-4650-BCF3-0ED0FA4F8C5C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>YCI</RootNamespace>
-    <AssemblyName>YCI</AssemblyName>
+    <RootNamespace>DataStructureDemo</RootNamespace>
+    <AssemblyName>DataStructureDemo</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,24 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="AudioPlayer.cs" />
-    <Compile Include="Card.cs" />
-    <Compile Include="Cat.cs" />
-    <Compile Include="CDPlayer.cs" />
-    <Compile Include="CordPhone.cs" />
-    <Compile Include="Cow.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="DVDPlayer.cs" />
-    <Compile Include="ElectronicDevice.cs" />
-    <Compile Include="KeyPadPhone.cs" />
-    <Compile Include="Lion.cs" />
-    <Compile Include="Phone.cs" />
-    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmartPhone.cs" />
-    <Compile Include="SoundSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

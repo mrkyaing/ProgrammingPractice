@@ -24,7 +24,7 @@ namespace HRMS
                 var sqlConnection = DbConnection.GetConnection();
                 if (sqlConnection != null)
                 {
-                    lblStatus.Text = "database connection is connected.";
+                    lblStatus.Text = "database connection is connected."+ "with time out"+sqlConnection.ConnectionTimeout +" second(s)";
                     lblStatus.ForeColor = Color.Green;
                 }               
             }
