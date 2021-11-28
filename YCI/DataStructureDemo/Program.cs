@@ -76,7 +76,6 @@ namespace DataStructureDemo
             fbSearch.Push("New Year Sale in Yangon");//2
             fbSearch.Push("New Year Sale in Mandalay");//1
             fbSearch.Push("What is happing in US?");//0
-           
             try { 
                 while(fbSearch.Count>0)
                 {
@@ -88,8 +87,25 @@ namespace DataStructureDemo
             {
                 Console.WriteLine(ex.Message);
             }
+            // Generic Type Stack Create .
+            //Stack<int> examstack = new Stack<int>();
+
+            //Declare Queue as Non-Generic type of Queue 
+            Queue ticketQueue =new Queue();
+            ticketQueue.Enqueue("Frist Class Tieckt Value 200");
+            ticketQueue.Enqueue("Second Class Ticket Value 100");
+            ticketQueue.Enqueue("Third Class Ticket Value 50");
+            ticketQueue.Enqueue(1000);
+            while (ticketQueue.Count > 0)
+            {
+                Console.WriteLine(ticketQueue.Peek());
+                ticketQueue.Dequeue();
+            }
+            //Declare Queue as Generic type of Queue 
+            Queue<string> ticketList = new Queue<string>();
+
             Console.WriteLine("press any key to close this window");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }

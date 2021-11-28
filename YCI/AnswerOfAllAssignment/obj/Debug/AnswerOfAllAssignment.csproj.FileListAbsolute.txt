@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\AnswerOfAllAssignment\bin\Debug\AnswerOfAllAssignment.exe.config
+E:\LearnProgramming\YCI\AnswerOfAllAssignment\bin\Debug\AnswerOfAllAssignment.exe
+E:\LearnProgramming\YCI\AnswerOfAllAssignment\bin\Debug\AnswerOfAllAssignment.pdb
+E:\LearnProgramming\YCI\AnswerOfAllAssignment\obj\Debug\AnswerOfAllAssignment.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\AnswerOfAllAssignment\obj\Debug\AnswerOfAllAssignment.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\AnswerOfAllAssignment\obj\Debug\AnswerOfAllAssignment.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\AnswerOfAllAssignment\obj\Debug\AnswerOfAllAssignment.exe
+E:\LearnProgramming\YCI\AnswerOfAllAssignment\obj\Debug\AnswerOfAllAssignment.pdb
