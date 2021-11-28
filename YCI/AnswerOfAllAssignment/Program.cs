@@ -10,6 +10,7 @@ namespace AnswerOfAllAssignment
     {
         static void Main(string[] args)
         {
+
             PartTimeStaff partTimeStaff = new PartTimeStaff()
             {
                 Id = "s001",
@@ -34,12 +35,15 @@ namespace AnswerOfAllAssignment
             fullTimeStaff.DisplayInfo();
             fullTimeStaff.CalcualtePayroll();
 
-            Circle c = new Circle()
-            {
-                Color="Red",
-                IsFilled=true,
-                Radius=20
-            };
+           
+
+            Circle c = new Circle();
+            Console.Write("Enter Color of Circle :");
+            c.Color = Console.ReadLine();
+            Console.Write("Enter Is Filled of Circle :");
+            c.IsFilled =Convert.ToBoolean(Console.ReadLine());
+            Console.Write("Enter Radius of Circle :");
+            c.Radius =Convert.ToInt32( Console.ReadLine());
             c.DisplayInfo();
             c.CalculateArea();
             c.CalculatePerimeter();
