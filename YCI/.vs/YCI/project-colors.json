@@ -50,7 +50,17 @@
       "ProjectGuid": "f4b8a8f1-a298-4650-bcf3-0ed0fa4f8c5c",
       "DisplayName": "DataStructureDemo",
       "ColorIndex": 8
+    },
+    "3785ec28-e1da-417c-bb89-d43c64a94139": {
+      "ProjectGuid": "3785ec28-e1da-417c-bb89-d43c64a94139",
+      "DisplayName": "AnswerOfAllAssignment",
+      "ColorIndex": 9
+    },
+    "4efd5a38-3cfe-404e-8cc4-6f635f28729c": {
+      "ProjectGuid": "4efd5a38-3cfe-404e-8cc4-6f635f28729c",
+      "DisplayName": "AlgorithmDemo",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 11
 }

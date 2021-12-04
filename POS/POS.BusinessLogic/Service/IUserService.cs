@@ -10,6 +10,10 @@ namespace POS.BusinessLogic.Service
     public interface IUserService
     {
         List<UserModel> GetUserList();
+        UserModel GetUserListById(string userId);
         bool SaveUser(UserModel userModel);
+        bool DeleteUserById(string userId);
+        bool UpdateUser(UserModel userModel);
+        bool CheckUserAlreadyExists(UserModel userModel);
     }
 }

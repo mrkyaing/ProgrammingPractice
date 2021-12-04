@@ -36,6 +36,29 @@ namespace POS.DAL
             sqlConnection.Close();
             return users;
         }
+
+        public UserModel GetUserListById(string userId)
+        {        
+            SqlConnection sqlConnection = DBConnection.GetConnection();
+            string query = $"SELECT * From [User] where IsDelete=0 and Id='{userId}'";
+            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            UserModel userModel = new UserModel();
+            while (sqlDataReader.Read())
+            {
+                userModel.UserName = sqlDataReader["UserName"].ToString();
+                userModel.Email = sqlDataReader["Email"].ToString();
+                userModel.Password = sqlDataReader["Password"].ToString();
+                userModel.CreatedDate = Convert.ToDateTime(sqlDataReader["CreatedDate"]);
+                if (!(sqlDataReader["UpdatedDate"] is DBNull))
+                {
+                    userModel.UpdatedDate = Convert.ToDateTime(sqlDataReader["UpdatedDate"]);
+                }
+            }
+            sqlConnection.Close();
+            return userModel;
+        }
+
         public bool SaveUser(UserModel userModel)
         {
             try
@@ -45,6 +68,40 @@ namespace POS.DAL
                 SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
                int result= sqlCommand.ExecuteNonQuery();
                 if(result>0) return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return false;
+        }
+
+        public bool DeleteUserById(string userId)
+        {
+            try
+            {
+                SqlConnection sqlConnection = DBConnection.GetConnection();
+                string sql = $"delete from [User] where Id='{userId}' ";
+                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
+                int result = sqlCommand.ExecuteNonQuery();
+                if (result > 0) return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return false;
+        }
+
+        public bool UpdateUser(UserModel userModel)
+        {
+            try
+            {
+                SqlConnection sqlConnection = DBConnection.GetConnection();
+                string sql = $"update [User] SET UserName='{userModel.UserName}', Email='{userModel.Email}',Password='{userModel.Password}',UpdatedDate='{DateTime.Now}' where Id='{userModel.Id}'";
+                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
+                int result = sqlCommand.ExecuteNonQuery();
+                if (result > 0) return true;
             }
             catch (Exception ex)
             {

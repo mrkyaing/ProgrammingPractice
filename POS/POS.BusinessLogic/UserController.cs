@@ -18,14 +18,37 @@ namespace POS.BusinessLogic
             userDataController = new UserDataController();
         }
 
+        public bool CheckUserAlreadyExists(UserModel userModel)
+        {
+            List<UserModel> users = userDataController.GetUserList();
+            bool userExists = users.Where(u => u.Email.Equals(userModel.Email)).Any();
+             return userExists;
+        }
+
+        public bool DeleteUserById(string userId)
+        {
+            return userDataController.DeleteUserById(userId);
+        }
+
         public List<UserModel> GetUserList()
         {
             return userDataController.GetUserList();
         }
 
+        public UserModel GetUserListById(string userId)
+        {
+            return userDataController.GetUserListById(userId);
+        }
+
         public bool SaveUser(UserModel userModel)
         {
+           
             return userDataController.SaveUser(userModel);
+        }
+
+        public bool UpdateUser(UserModel userModel)
+        {
+            return userDataController.UpdateUser(userModel);
         }
     }
 }

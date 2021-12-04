@@ -56,7 +56,7 @@
             // txtUserName
             // 
             this.txtUserName.Location = new System.Drawing.Point(84, 33);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(189, 20);
             this.txtUserName.TabIndex = 1;
@@ -74,7 +74,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(84, 74);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(189, 20);
             this.txtEmail.TabIndex = 1;
@@ -82,7 +82,7 @@
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(98, 153);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(56, 23);
             this.btnSave.TabIndex = 2;
@@ -93,7 +93,7 @@
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(160, 153);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(56, 23);
             this.btnCancel.TabIndex = 3;
@@ -188,9 +188,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserUI";
             this.Text = "UserUI";
+            this.Load += new System.EventHandler(this.UserUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\AlgorithmDemo\bin\Debug\AlgorithmDemo.exe.config
+E:\LearnProgramming\YCI\AlgorithmDemo\bin\Debug\AlgorithmDemo.exe
+E:\LearnProgramming\YCI\AlgorithmDemo\bin\Debug\AlgorithmDemo.pdb
+E:\LearnProgramming\YCI\AlgorithmDemo\obj\Debug\AlgorithmDemo.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\AlgorithmDemo\obj\Debug\AlgorithmDemo.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\AlgorithmDemo\obj\Debug\AlgorithmDemo.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\AlgorithmDemo\obj\Debug\AlgorithmDemo.exe
+E:\LearnProgramming\YCI\AlgorithmDemo\obj\Debug\AlgorithmDemo.pdb

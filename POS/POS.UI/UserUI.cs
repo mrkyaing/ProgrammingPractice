@@ -14,11 +14,14 @@ namespace POS.UI
 {
     public partial class UserUI : Form
     {
+        UserController userController;
         public UserUI()
         {
             InitializeComponent();
+            userController= new UserController();
         }
-
+        public string UserId { get; set; }
+        public bool IsUpdateStatus { get; set; }
         private void btnSave_Click(object sender, EventArgs e)
         {
             DBController dbController = new DBController();
@@ -27,19 +30,54 @@ namespace POS.UI
             lblDB.Text = sqlModel.DatabaseName;
             lblConn.Text = sqlModel.ConnectionStatus;
             lblState.Text = sqlModel.ConnectionState;
-            lbltime.Text = sqlModel.ConnectionTimeOut.ToString();
+            lbltime.Text = sqlModel.ConnectionTimeOut.ToString();                    
+            SaveAction();           
+        }
 
+        private void SaveAction()
+        {
             UserModel userModel = new UserModel()
             {
                 UserName = txtUserName.Text,
                 Password = txtPasswrod.Text,
                 Email = txtEmail.Text
             };
-            UserController userController = new UserController();
-            if (userController.SaveUser(userModel))
-                MessageBox.Show("save successed");
+            if (btnSave.Text == "Update")
+            {
+                userModel.Id = UserId;
+                if (userController.CheckUserAlreadyExists(userModel))
+                {
+                    MessageBox.Show("Email already exists!");
+                    return;
+                }
+                if (userController.UpdateUser(userModel))
+                    MessageBox.Show("Update successed");
+                else
+                    MessageBox.Show("Update failed");
+            }
             else
-                MessageBox.Show("save failed");
+            {
+                if (userController.CheckUserAlreadyExists(userModel))
+                {
+                    MessageBox.Show("Email already exists!");
+                }
+                else if (userController.SaveUser(userModel))
+                    MessageBox.Show("save successed");
+                else
+                    MessageBox.Show("save failed");
+            }
+        }
+
+        private void UserUI_Load(object sender, EventArgs e)
+        {
+            if (IsUpdateStatus)
+            {
+                btnSave.Text = "Update";
+                UserModel userModel=userController.GetUserListById(UserId);
+                txtUserName.Text = userModel.UserName;
+                txtPasswrod.Text = userModel.Password;
+                txtEmail.Text = userModel.Email;
+            }
         }
     }
 }
