@@ -9,8 +9,11 @@ namespace ADO.NETDemo
         {
             try
             {
+                //your connection string here 
                 string connectionString = "Data Source=localhost;Initial Catalog=SimpleDB;User Id=sa;Password=sasa";
+                //create SqlConneciton Object from using System.Data.SqlClient Library 
                 SqlConnection con = new SqlConnection(connectionString);
+                //Open database Connection Here 
                 con.Open();
                 if (con != null)
                 {
@@ -20,6 +23,7 @@ namespace ADO.NETDemo
             }
             catch (SqlException ex)
             {
+                //Error occur 
                 Console.WriteLine("Error Occur when connect to database");
             }
         }
