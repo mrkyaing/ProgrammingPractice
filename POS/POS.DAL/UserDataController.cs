@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,6 +60,23 @@ namespace POS.DAL
             return userModel;
         }
 
+        public UserModel GetUserByUserNameAndPassword(string userName,string password)
+        {
+            SqlConnection sqlConnection = DBConnection.GetConnection();       
+            SqlCommand sqlCommand = new SqlCommand("User_Login",sqlConnection);
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            sqlCommand.Parameters.Add("@UserName", SqlDbType.NVarChar).Value = userName;
+            sqlCommand.Parameters.Add("@Password", SqlDbType.NVarChar).Value = password;
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            UserModel userModel = new UserModel();
+            while (sqlDataReader.Read())
+            {
+                userModel.UserName = sqlDataReader["UserName"].ToString();
+                userModel.Id = sqlDataReader["Id"].ToString();
+            }
+            sqlConnection.Close();
+            return userModel;
+        }
         public bool SaveUser(UserModel userModel)
         {
             try

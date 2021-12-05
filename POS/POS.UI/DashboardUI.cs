@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.Utilities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +14,10 @@ namespace POS.UI
     public partial class DashboardUI : Form
     {
         private int childFormNumber = 0;
-
         public DashboardUI()
         {
             InitializeComponent();
+            welcomeUserInfoToolStripMenuItem.Text = $"Welcome {AuditUser.UserName}";
         }
 
         private void ShowNewForm(object sender, EventArgs e)
@@ -66,15 +67,7 @@ namespace POS.UI
         {
         }
 
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
+       
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -114,5 +107,13 @@ namespace POS.UI
         {
             new UserUI().Show();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LoginUI().Show();      
+        }
+
+      
     }
 }

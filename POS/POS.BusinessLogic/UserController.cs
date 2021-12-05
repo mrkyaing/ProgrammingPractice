@@ -40,6 +40,11 @@ namespace POS.BusinessLogic
             return userDataController.GetUserListById(userId);
         }
 
+        public UserModel LoginUser(UserModel userModel)
+        {
+           return userDataController.GetUserByUserNameAndPassword(userModel.UserName,userModel.Password);
+        }
+
         public bool SaveUser(UserModel userModel)
         {
            

@@ -37,3 +37,4 @@ E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.exe
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.pdb
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.DashboardUI.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UserListUI.resources
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.LoginUI.resources

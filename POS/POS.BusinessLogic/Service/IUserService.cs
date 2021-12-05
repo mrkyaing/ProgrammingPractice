@@ -15,5 +15,6 @@ namespace POS.BusinessLogic.Service
         bool DeleteUserById(string userId);
         bool UpdateUser(UserModel userModel);
         bool CheckUserAlreadyExists(UserModel userModel);
+        UserModel LoginUser(UserModel userModel);
     }
 }

@@ -60,7 +60,12 @@
       "ProjectGuid": "4efd5a38-3cfe-404e-8cc4-6f635f28729c",
       "DisplayName": "AlgorithmDemo",
       "ColorIndex": 10
+    },
+    "287b0468-17ca-4d6b-94c0-09305fe6e946": {
+      "ProjectGuid": "287b0468-17ca-4d6b-94c0-09305fe6e946",
+      "DisplayName": "ADO.NETDemo",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 12
 }
