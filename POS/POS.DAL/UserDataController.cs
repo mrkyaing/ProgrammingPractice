@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using POS.Utilities;
 
 namespace POS.DAL
 {
@@ -99,7 +100,7 @@ namespace POS.DAL
             try
             {
                 SqlConnection sqlConnection = DBConnection.GetConnection();
-                string sql = $"delete from [User] where Id='{userId}' ";
+                string sql = $"update  [User] set IsDelete=1,DeletedUserId='{AuditUser.UserId}' where Id='{userId}' ";
                 SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
                 int result = sqlCommand.ExecuteNonQuery();
                 if (result > 0) return true;

@@ -23,6 +23,11 @@ namespace POS.UI
 
         private void UserListUI_Load(object sender, EventArgs e)
         {
+            LoadUserList();
+        }
+
+        private void LoadUserList()
+        {
             UserDataGridView.DataSource = userController.GetUserList();
         }
 
@@ -34,6 +39,7 @@ namespace POS.UI
                 if (userController.DeleteUserById(userId))
                 {
                     MessageBox.Show("delete success");
+                    LoadUserList();
                 }
             }    
         }

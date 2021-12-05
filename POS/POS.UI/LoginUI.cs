@@ -32,8 +32,7 @@ namespace POS.UI
             UserModel dbuser=userController.LoginUser(user);
             if (string.IsNullOrEmpty(dbuser.UserName))
             {
-                MessageBox.Show("Invalid User");
-               
+                MessageBox.Show("Invalid User");     
             }
             else
             {
@@ -41,8 +40,25 @@ namespace POS.UI
                 AuditUser.UserId = dbuser.Id;
                 AuditUser.UserName = dbuser.UserName;
                 DashboardUI dashboardUI = new DashboardUI();
-                dashboardUI.Show();
-                
+                dashboardUI.Show();               
+            }
+        }
+
+        private void txtUserName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtUserName.Text))
+            {
+                txtUserName.Focus();
+                errorProviderUserName.SetError(txtUserName,"fill user name.");
+            }
+        }
+
+        private void txtPassword_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                txtPassword.Focus();
+                errorProviderUserName.SetError(txtPassword, "fill password.");
             }
         }
     }
