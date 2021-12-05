@@ -33,7 +33,6 @@ namespace AlgorithmDemo
             {
                 Console.WriteLine($"raise tution grade");
             }
-
             Console.WriteLine("press any key to close this window");
             Console.ReadKey();
         }

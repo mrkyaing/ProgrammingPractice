@@ -1,0 +1,8 @@
+E:\LearnProgramming\YCI\ADO.NETDemo\bin\Debug\ADO.NETDemo.exe.config
+E:\LearnProgramming\YCI\ADO.NETDemo\bin\Debug\ADO.NETDemo.exe
+E:\LearnProgramming\YCI\ADO.NETDemo\bin\Debug\ADO.NETDemo.pdb
+E:\LearnProgramming\YCI\ADO.NETDemo\obj\Debug\ADO.NETDemo.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\ADO.NETDemo\obj\Debug\ADO.NETDemo.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\ADO.NETDemo\obj\Debug\ADO.NETDemo.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\ADO.NETDemo\obj\Debug\ADO.NETDemo.exe
+E:\LearnProgramming\YCI\ADO.NETDemo\obj\Debug\ADO.NETDemo.pdb
