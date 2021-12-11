@@ -25,7 +25,12 @@
       "ProjectGuid": "c3d5a28e-a83e-4b45-becd-df87a126a94c",
       "DisplayName": "POS.Models",
       "ColorIndex": 3
+    },
+    "81f5763a-1c09-4dc6-bec5-92500f17efbd": {
+      "ProjectGuid": "81f5763a-1c09-4dc6-bec5-92500f17efbd",
+      "DisplayName": "POS.Utilities",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
