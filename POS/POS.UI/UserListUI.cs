@@ -1,4 +1,5 @@
 ﻿using POS.BusinessLogic;
+using POS.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,6 @@ namespace POS.UI
     public partial class UserListUI : Form
     {
         UserController userController;
-        private string userId;
         public UserListUI()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace POS.UI
             DialogResult result = MessageBox.Show("are you sure to delete?", "Deleting data", MessageBoxButtons.YesNo);
              if (result == DialogResult.Yes)
             { 
-                if (userController.DeleteUserById(userId))
+                if (userController.DeleteUserById(AuditUser.Id))
                 {
                     MessageBox.Show("delete success");
                     LoadUserList();
@@ -48,7 +48,6 @@ namespace POS.UI
         {
             UserUI userUI = new UserUI();
             userUI.IsUpdateStatus = true;
-            userUI.UserId= userId;
             userUI.Show();
         }
 
@@ -57,7 +56,7 @@ namespace POS.UI
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row=UserDataGridView.Rows[e.RowIndex];
-                userId=row.Cells[0].Value.ToString();
+                AuditUser.Id=row.Cells["Id"].Value.ToString();
             }
         }
     }

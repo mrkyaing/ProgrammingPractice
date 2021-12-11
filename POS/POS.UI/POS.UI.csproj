@@ -60,6 +60,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UMListUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UMListUI.Designer.cs">
+      <DependentUpon>UMListUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UMUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UMUI.Designer.cs">
+      <DependentUpon>UMUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserListUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UMListUI.resx">
+      <DependentUpon>UMListUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMUI.resx">
+      <DependentUpon>UMUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserListUI.resx">
       <DependentUpon>UserListUI.cs</DependentUpon>
     </EmbeddedResource>

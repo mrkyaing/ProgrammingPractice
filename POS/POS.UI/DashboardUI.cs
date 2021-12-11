@@ -114,6 +114,14 @@ namespace POS.UI
             new LoginUI().Show();      
         }
 
-      
+        private void addUMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new UMUI().Show();
+        }
+
+        private void listUMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new UMListUI().Show();
+        }
     }
 }

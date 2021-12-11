@@ -34,6 +34,8 @@
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.welcomeUserInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -46,8 +48,9 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.welcomeUserInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addUMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listUMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -58,7 +61,8 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userToolStripMenuItem,
             this.logoutToolStripMenuItem,
-            this.welcomeUserInfoToolStripMenuItem});
+            this.welcomeUserInfoToolStripMenuItem,
+            this.uMToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1144, 24);
@@ -77,16 +81,29 @@
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // listToolStripMenuItem
             // 
             this.listToolStripMenuItem.Name = "listToolStripMenuItem";
-            this.listToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.listToolStripMenuItem.Text = "List";
             this.listToolStripMenuItem.Click += new System.EventHandler(this.listToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
+            // welcomeUserInfoToolStripMenuItem
+            // 
+            this.welcomeUserInfoToolStripMenuItem.Name = "welcomeUserInfoToolStripMenuItem";
+            this.welcomeUserInfoToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
+            this.welcomeUserInfoToolStripMenuItem.Text = "WelcomeUserInfo";
             // 
             // toolStrip
             // 
@@ -187,18 +204,28 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // logoutToolStripMenuItem
+            // uMToolStripMenuItem
             // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.logoutToolStripMenuItem.Text = "Logout";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            this.uMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addUMToolStripMenuItem,
+            this.listUMToolStripMenuItem});
+            this.uMToolStripMenuItem.Name = "uMToolStripMenuItem";
+            this.uMToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.uMToolStripMenuItem.Text = "UM";
             // 
-            // welcomeUserInfoToolStripMenuItem
+            // addUMToolStripMenuItem
             // 
-            this.welcomeUserInfoToolStripMenuItem.Name = "welcomeUserInfoToolStripMenuItem";
-            this.welcomeUserInfoToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
-            this.welcomeUserInfoToolStripMenuItem.Text = "WelcomeUserInfo";
+            this.addUMToolStripMenuItem.Name = "addUMToolStripMenuItem";
+            this.addUMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addUMToolStripMenuItem.Text = "Add UM";
+            this.addUMToolStripMenuItem.Click += new System.EventHandler(this.addUMToolStripMenuItem_Click);
+            // 
+            // listUMToolStripMenuItem
+            // 
+            this.listUMToolStripMenuItem.Name = "listUMToolStripMenuItem";
+            this.listUMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listUMToolStripMenuItem.Text = "List UM";
+            this.listUMToolStripMenuItem.Click += new System.EventHandler(this.listUMToolStripMenuItem_Click);
             // 
             // DashboardUI
             // 
@@ -243,6 +270,9 @@
         private System.Windows.Forms.ToolStripMenuItem listToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem welcomeUserInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addUMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listUMToolStripMenuItem;
     }
 }
 

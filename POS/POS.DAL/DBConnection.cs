@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace POS.DAL
     {
         public static SqlConnection GetConnection()
         {
-            string connString = @"Server=localhost;Initial Catalog=POS;UID=sa;PWD=sasa";
+            string connString = ConfigurationManager.ConnectionStrings["MainConnection"].ConnectionString;
             try
             {
                 SqlConnection conn = new SqlConnection(connString);
