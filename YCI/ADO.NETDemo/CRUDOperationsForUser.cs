@@ -21,7 +21,7 @@ namespace ADO.NETDemo
             if (con != null)
             {              
                 //step 3) define your query statement
-                string query = "SELECT * FROM Users";
+                string query = "select * from users order by Id";
                 //step 4) create SqlCommand object 
                 SqlCommand sqlCommmand = new SqlCommand(query,con);//passing your query and your sqlconnection object 
                 //step 5) reading data from database with SqlDataReader Object 
@@ -38,6 +38,117 @@ namespace ADO.NETDemo
                 }
                 reader.Close();
                 con.Close();
+            }
+        }//end of GetUserList() 
+
+        public void SaveUser(UserModel user)
+        {
+            try
+            {
+                //Step 1) define sql server name and password 
+                //your connection string here 
+                string connectionString = "Data Source=localhost;Initial Catalog=SimpleDB;User Id=sa;Password=sasa";
+
+                //step 2) create SqlConnection Object by using System.Data.SqlClient Library 
+                SqlConnection con = new SqlConnection(connectionString);
+                //Open database Connection  
+                con.Open();
+                if (con != null)
+                {
+                    //step 3) define your query statement
+                    string query = $"insert into users values({user.Id},'{user.UserName}','{user.Email}','{user.Password}','{user.IsDelete}','{user.CreatedDate}')";
+
+                    //step 4) create SqlCommand object 
+                    SqlCommand sqlCommmand = new SqlCommand(query, con);//passing your query and your sqlconnection object 
+
+                    //step 5) inserting data to database with ExecuteNonQuery Method of  SqlCommand Object 
+                    int result = sqlCommmand.ExecuteNonQuery();
+                    if (result > 0)
+                    {
+                        Console.WriteLine("1 record save to database successfully");
+                    }
+                    con.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Error occur when saving data " + ex.Message);
+            }
+
+        }//end of SaveUser Method 
+
+
+        public void UpdateUser(UserModel user)
+        {
+            try
+            {
+                //Step 1) define sql server name and password 
+                //your connection string here 
+                string connectionString = "Data Source=localhost;Initial Catalog=SimpleDB;User Id=sa;Password=sasa";
+
+                //step 2) create SqlConnection Object by using System.Data.SqlClient Library 
+                SqlConnection con = new SqlConnection(connectionString);
+                //Open database Connection  
+                con.Open();
+                if (con != null)
+                {
+                    //step 3) define your query statement
+                    string query = $"update users set UserName='{user.UserName}',Email='{user.Email}' where Id={user.Id}";
+
+                    //step 4) create SqlCommand object 
+                    SqlCommand sqlCommmand = new SqlCommand(query, con);//passing your query and your sqlconnection object 
+
+                    //step 5) inserting data to database with ExecuteNonQuery Method of  SqlCommand Object 
+                    int result = sqlCommmand.ExecuteNonQuery();
+                    if (result > 0)
+                    {
+                        Console.WriteLine("1 record update to database successfully");
+                    }
+                    con.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Error occur when saving data " + ex.Message);
+            }
+        }//end of update user method 
+
+
+        public void DeleteUser(int userId)
+        {
+            try
+            {
+                //Step 1) define sql server name and password 
+                //your connection string here 
+                string connectionString = "Data Source=localhost;Initial Catalog=SimpleDB;User Id=sa;Password=sasa";
+
+                //step 2) create SqlConnection Object by using System.Data.SqlClient Library 
+                SqlConnection con = new SqlConnection(connectionString);
+                //Open database Connection  
+                con.Open();
+                if (con != null)
+                {
+                    //step 3) define your query statement
+                    string query = $"delete from users where Id={userId}";
+
+                    //step 4) create SqlCommand object 
+                    SqlCommand sqlCommmand = new SqlCommand(query, con);//passing your query and your sqlconnection object 
+
+                    //step 5) inserting data to database with ExecuteNonQuery Method of  SqlCommand Object 
+                    int result = sqlCommmand.ExecuteNonQuery();
+                    if (result > 0)
+                    {
+                        Console.WriteLine("1 record delete to database successfully");
+                    }
+                    con.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Error occur when saving data " + ex.Message);
             }
         }
     }
