@@ -1,5 +1,6 @@
 ﻿using POS.BusinessLogic;
 using POS.Models;
+using POS.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,6 @@ namespace POS.UI
             InitializeComponent();
             userController= new UserController();
         }
-        public string UserId { get; set; }
         public bool IsUpdateStatus { get; set; }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -38,13 +38,14 @@ namespace POS.UI
         {
             UserModel userModel = new UserModel()
             {
+                Id=Guid.NewGuid().ToString(),
                 UserName = txtUserName.Text,
                 Password = txtPasswrod.Text,
                 Email = txtEmail.Text
             };
             if (btnSave.Text == "Update")
             {
-                userModel.Id = UserId;
+                 userModel.Id =AuditUser.Id;
                 if (userController.CheckUserAlreadyExists(userModel))
                 {
                     MessageBox.Show("Email already exists!");
@@ -73,7 +74,7 @@ namespace POS.UI
             if (IsUpdateStatus)
             {
                 btnSave.Text = "Update";
-                UserModel userModel=userController.GetUserListById(UserId);
+                UserModel userModel=userController.GetUserListById(AuditUser.Id);
                 txtUserName.Text = userModel.UserName;
                 txtPasswrod.Text = userModel.Password;
                 txtEmail.Text = userModel.Email;
