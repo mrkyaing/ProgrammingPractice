@@ -13,6 +13,9 @@ namespace ADO.NETDemo
             DatabaseConnection databaseConnection = new DatabaseConnection();
             databaseConnection.CheckDatabaseConnection();
 
+            CRUDOperationsForUser cruduser=new CRUDOperationsForUser();
+            cruduser.GetUserList();//method call
+            
             Console.WriteLine("press any key to close this window");
             Console.ReadKey();
         }
