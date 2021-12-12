@@ -1,0 +1,13 @@
+E:\LearnProgramming\YCI\HelloWorldGUI\bin\Debug\HelloWorldGUI.exe.config
+E:\LearnProgramming\YCI\HelloWorldGUI\bin\Debug\HelloWorldGUI.exe
+E:\LearnProgramming\YCI\HelloWorldGUI\bin\Debug\HelloWorldGUI.pdb
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.Form1.resources
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.Properties.Resources.resources
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.csproj.GenerateResource.cache
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.exe
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.pdb
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.LoginUI.resources
+E:\LearnProgramming\YCI\HelloWorldGUI\obj\Debug\HelloWorldGUI.SimpleCalculatorUI.resources
