@@ -114,7 +114,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.umGridview);
             this.Name = "UMListUI";
-            this.Text = "UMListUI";
+            this.Text = "UMList";
             this.Load += new System.EventHandler(this.UMListUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.umGridview)).EndInit();
             this.ResumeLayout(false);

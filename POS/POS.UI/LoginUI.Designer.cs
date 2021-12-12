@@ -84,6 +84,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(175, 20);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtPassword_Validating);
             // 
             // linkNewOne
@@ -118,7 +119,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginUI";
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderUserName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderPassword)).EndInit();
             this.ResumeLayout(false);

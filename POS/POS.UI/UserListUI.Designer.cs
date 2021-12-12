@@ -72,7 +72,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.UserDataGridView);
             this.Name = "UserListUI";
-            this.Text = "UserListUI";
+            this.Text = "UserList";
             this.Load += new System.EventHandler(this.UserListUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UserDataGridView)).EndInit();
             this.ResumeLayout(false);

@@ -36,21 +36,17 @@
             this.listToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.welcomeUserInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addUMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listUMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.printPreviewToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.uMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addUMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listUMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -60,9 +56,9 @@
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userToolStripMenuItem,
-            this.logoutToolStripMenuItem,
+            this.uMToolStripMenuItem,
             this.welcomeUserInfoToolStripMenuItem,
-            this.uMToolStripMenuItem});
+            this.logoutToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1144, 24);
@@ -105,17 +101,36 @@
             this.welcomeUserInfoToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
             this.welcomeUserInfoToolStripMenuItem.Text = "WelcomeUserInfo";
             // 
+            // uMToolStripMenuItem
+            // 
+            this.uMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addUMToolStripMenuItem,
+            this.listUMToolStripMenuItem});
+            this.uMToolStripMenuItem.Name = "uMToolStripMenuItem";
+            this.uMToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.uMToolStripMenuItem.Text = "UM";
+            // 
+            // addUMToolStripMenuItem
+            // 
+            this.addUMToolStripMenuItem.Name = "addUMToolStripMenuItem";
+            this.addUMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addUMToolStripMenuItem.Text = "Add ";
+            this.addUMToolStripMenuItem.Click += new System.EventHandler(this.addUMToolStripMenuItem_Click);
+            // 
+            // listUMToolStripMenuItem
+            // 
+            this.listUMToolStripMenuItem.Name = "listUMToolStripMenuItem";
+            this.listUMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listUMToolStripMenuItem.Text = "List ";
+            this.listUMToolStripMenuItem.Click += new System.EventHandler(this.listUMToolStripMenuItem_Click);
+            // 
             // toolStrip
             // 
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripButton,
             this.openToolStripButton,
             this.saveToolStripButton,
-            this.toolStripSeparator1,
-            this.printToolStripButton,
-            this.printPreviewToolStripButton,
-            this.toolStripSeparator2,
-            this.helpToolStripButton});
+            this.toolStripSeparator1});
             this.toolStrip.Location = new System.Drawing.Point(0, 24);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(1144, 25);
@@ -156,38 +171,6 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // printToolStripButton
-            // 
-            this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
-            this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Black;
-            this.printToolStripButton.Name = "printToolStripButton";
-            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.printToolStripButton.Text = "Print";
-            // 
-            // printPreviewToolStripButton
-            // 
-            this.printPreviewToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.printPreviewToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripButton.Image")));
-            this.printPreviewToolStripButton.ImageTransparentColor = System.Drawing.Color.Black;
-            this.printPreviewToolStripButton.Name = "printPreviewToolStripButton";
-            this.printPreviewToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.printPreviewToolStripButton.Text = "Print Preview";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // helpToolStripButton
-            // 
-            this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
-            this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Black;
-            this.helpToolStripButton.Name = "helpToolStripButton";
-            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.helpToolStripButton.Text = "Help";
-            // 
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -204,29 +187,6 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // uMToolStripMenuItem
-            // 
-            this.uMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addUMToolStripMenuItem,
-            this.listUMToolStripMenuItem});
-            this.uMToolStripMenuItem.Name = "uMToolStripMenuItem";
-            this.uMToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.uMToolStripMenuItem.Text = "UM";
-            // 
-            // addUMToolStripMenuItem
-            // 
-            this.addUMToolStripMenuItem.Name = "addUMToolStripMenuItem";
-            this.addUMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addUMToolStripMenuItem.Text = "Add UM";
-            this.addUMToolStripMenuItem.Click += new System.EventHandler(this.addUMToolStripMenuItem_Click);
-            // 
-            // listUMToolStripMenuItem
-            // 
-            this.listUMToolStripMenuItem.Name = "listUMToolStripMenuItem";
-            this.listUMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listUMToolStripMenuItem.Text = "List UM";
-            this.listUMToolStripMenuItem.Click += new System.EventHandler(this.listUMToolStripMenuItem_Click);
-            // 
             // DashboardUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,7 +198,8 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "DashboardUI";
-            this.Text = "DashboardUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Dashboard";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.toolStrip.ResumeLayout(false);
@@ -256,14 +217,10 @@
         private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolStripButton newToolStripButton;
         private System.Windows.Forms.ToolStripButton openToolStripButton;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
-        private System.Windows.Forms.ToolStripButton printToolStripButton;
-        private System.Windows.Forms.ToolStripButton printPreviewToolStripButton;
-        private System.Windows.Forms.ToolStripButton helpToolStripButton;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
