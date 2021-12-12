@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmDemo", "AlgorithmD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO.NETDemo", "ADO.NETDemo\ADO.NETDemo.csproj", "{287B0468-17CA-4D6B-94C0-09305FE6E946}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldGUI", "HelloWorldGUI\HelloWorldGUI.csproj", "{80127222-203C-4AAE-A85E-C96756DDE30C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{287B0468-17CA-4D6B-94C0-09305FE6E946}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{287B0468-17CA-4D6B-94C0-09305FE6E946}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{287B0468-17CA-4D6B-94C0-09305FE6E946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80127222-203C-4AAE-A85E-C96756DDE30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80127222-203C-4AAE-A85E-C96756DDE30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80127222-203C-4AAE-A85E-C96756DDE30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80127222-203C-4AAE-A85E-C96756DDE30C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
