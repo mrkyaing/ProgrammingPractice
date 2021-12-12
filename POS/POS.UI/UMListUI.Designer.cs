@@ -58,6 +58,7 @@
             this.umGridview.ReadOnly = true;
             this.umGridview.Size = new System.Drawing.Size(800, 450);
             this.umGridview.TabIndex = 0;
+            this.umGridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.umGridview_CellClick);
             // 
             // Id
             // 
@@ -100,12 +101,16 @@
             this.Edit.HeaderText = "";
             this.Edit.Name = "Edit";
             this.Edit.ReadOnly = true;
+            this.Edit.Text = "Edit";
+            this.Edit.UseColumnTextForLinkValue = true;
             // 
             // Delete
             // 
             this.Delete.HeaderText = "";
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForLinkValue = true;
             // 
             // UMListUI
             // 

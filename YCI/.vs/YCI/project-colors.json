@@ -65,7 +65,12 @@
       "ProjectGuid": "287b0468-17ca-4d6b-94c0-09305fe6e946",
       "DisplayName": "ADO.NETDemo",
       "ColorIndex": 11
+    },
+    "80127222-203c-4aae-a85e-c96756dde30c": {
+      "ProjectGuid": "80127222-203c-4aae-a85e-c96756dde30c",
+      "DisplayName": "HelloWorldGUI",
+      "ColorIndex": 12
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 13
 }

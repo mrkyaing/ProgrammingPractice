@@ -41,7 +41,23 @@ namespace POS.DAL
             sqlConnection.Close();
             return uMs;
         }
-
+        public UMModel GetUMById(string Id)
+        {         
+            SqlConnection sqlConnection = DBConnection.GetConnection();
+            SqlCommand sqlCommand = new SqlCommand("UM_SelectById", sqlConnection);
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            sqlCommand.Parameters.Add("@Id",SqlDbType.Char).Value = Id;
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            UMModel um = new UMModel();
+            while (sqlDataReader.Read())
+            {
+                um.Id = sqlDataReader["Id"].ToString();
+                um.Code = sqlDataReader["Code"].ToString();
+                um.Description = sqlDataReader["Description"].ToString();                      
+            }
+            sqlConnection.Close();
+            return um;
+        }
         public bool SaveUM(UMModel umModel)
         {
             try
@@ -65,38 +81,40 @@ namespace POS.DAL
             return false;
         }
 
-        public bool DeleteUserById(string userId)
+        public void DeleteUserById(string Id)
         {
             try
             {
-                SqlConnection sqlConnection = DBConnection.GetConnection();
-                string sql = $"update  [User] set IsDelete=1,DeletedUserId='{AuditUser.UserId}' where Id='{userId}' ";
-                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
-                int result = sqlCommand.ExecuteNonQuery();
-                if (result > 0) return true;
+                SqlConnection sqlConnection = DBConnection.GetConnection();              
+                SqlCommand sqlCommand = new SqlCommand("UM_DeleteById", sqlConnection);
+                sqlCommand.CommandType=CommandType.StoredProcedure;
+                sqlCommand.Parameters.Add("@Id", SqlDbType.Char).Value = Id;
+                sqlCommand.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
                 throw ex;
-            }
-            return false;
+            }          
         }
 
-        public bool UpdateUser(UserModel userModel)
+        public void UpdateUM(UMModel uMModel)
         {
             try
             {
                 SqlConnection sqlConnection = DBConnection.GetConnection();
-                string sql = $"update [User] SET UserName='{userModel.UserName}', Email='{userModel.Email}',Password='{userModel.Password}',UpdatedDate='{DateTime.Now}' where Id='{userModel.Id}'";
-                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
-                int result = sqlCommand.ExecuteNonQuery();
-                if (result > 0) return true;
+                SqlCommand sqlCommand = new SqlCommand("UM_Update", sqlConnection);
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+                sqlCommand.Parameters.Add("@Id", SqlDbType.Char).Value = uMModel.Id;
+                sqlCommand.Parameters.Add("@Code", SqlDbType.Char).Value = uMModel.Code;
+                sqlCommand.Parameters.Add("@Description", SqlDbType.Char).Value = uMModel.Description;
+                sqlCommand.Parameters.Add("@UpdatedDate", SqlDbType.DateTime).Value =DateTime.Now;
+                sqlCommand.Parameters.Add("@UpdatedUserId", SqlDbType.Char).Value =AuditUser.UserId;
+                sqlCommand.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
                 throw ex;
-            }
-            return false;
+            }           
         }
     }
 }

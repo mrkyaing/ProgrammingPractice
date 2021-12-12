@@ -101,6 +101,7 @@
             this.Controls.Add(this.btnSave);
             this.Name = "UMUI";
             this.Text = "UM";
+            this.Load += new System.EventHandler(this.UMUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
