@@ -100,7 +100,7 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Name = "UMUI";
-            this.Text = "UMUI";
+            this.Text = "UM";
             this.ResumeLayout(false);
             this.PerformLayout();
 

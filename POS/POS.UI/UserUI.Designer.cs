@@ -190,7 +190,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserUI";
-            this.Text = "UserUI";
+            this.Text = "User";
             this.Load += new System.EventHandler(this.UserUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

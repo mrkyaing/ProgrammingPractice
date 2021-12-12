@@ -32,7 +32,7 @@ namespace POS.UI
             UserModel dbuser=userController.LoginUser(user);
             if (string.IsNullOrEmpty(dbuser.UserName))
             {
-                MessageBox.Show("Invalid User");     
+                MessageBox.Show("User Name or Password is incorrect", "Invalid User", MessageBoxButtons.OK,MessageBoxIcon.Information);     
             }
             else
             {
