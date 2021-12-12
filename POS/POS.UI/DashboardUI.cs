@@ -100,28 +100,42 @@ namespace POS.UI
         private void listToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UserListUI userListUI = new UserListUI();
+            userListUI.MdiParent = this;
             userListUI.Show();
         }
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new UserUI().Show();
+            UserUI userui = new UserUI();
+            userui.MdiParent = this;
+            userui.Show();
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new LoginUI().Show();      
+            LoginUI loginUI = new LoginUI();
+            loginUI.Show();
         }
 
         private void addUMToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new UMUI().Show();
+            UMUI uMUI = new UMUI();
+            uMUI.MdiParent = this;
+            uMUI.Show();
+
         }
 
         private void listUMToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new UMListUI().Show();
+            UMListUI uMListUI = new UMListUI();
+            uMListUI.MdiParent = this;
+            uMListUI.Show();
+        }
+
+        private void DashboardUI_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

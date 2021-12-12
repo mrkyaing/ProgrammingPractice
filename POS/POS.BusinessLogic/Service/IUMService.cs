@@ -12,6 +12,9 @@ namespace POS.BusinessLogic.Service
     {
         UMModelCollections getUMList();
         bool SaveUM(UMModel um);
+        UMModel GetUMById(string Id);
+        bool UpdateUM(UMModel um);
+        bool DeleteUMById(string Id);
     }
 
 }

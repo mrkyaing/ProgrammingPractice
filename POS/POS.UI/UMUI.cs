@@ -1,5 +1,6 @@
 ﻿using POS.BusinessLogic;
 using POS.Models;
+using POS.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace POS.UI
     public partial class UMUI : Form
     {
         UMController uMController;
+        public bool IsUpdateStatus { get; set; }
         public UMUI()
         {
             InitializeComponent();
@@ -24,25 +26,52 @@ namespace POS.UI
         private void btnSave_Click(object sender, EventArgs e)
         {
             UMModel umModel = new UMModel()
-            {
-                Id = Guid.NewGuid().ToString(),
+            {              
                 Code =txtCode.Text,
                 Description = txtDescription.Text
             };
             try
             {
-                if (uMController.SaveUM(umModel))
+                if (btnSave.Text.Equals("Update"))
                 {
-                    MessageBox.Show("save successed");
+                    umModel.Id = AuditUser.Id;
+                    if (uMController.UpdateUM(umModel))
+                    {
+                        MessageBox.Show("update successed");
+                    }
+                    else
+                    {
+                        MessageBox.Show("update failed");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("save failed");
+                    umModel.Id = Guid.NewGuid().ToString();
+                    if (uMController.SaveUM(umModel))
+                    {
+                        MessageBox.Show("save successed");
+                    }
+                    else
+                    {
+                        MessageBox.Show("save failed");
+                    }
                 }
+                
             }
             catch (Exception ex)
             {
                 throw;
+            }
+        }
+
+        private void UMUI_Load(object sender, EventArgs e)
+        {
+            if (IsUpdateStatus)
+            {
+                btnSave.Text = "Update";
+                UMModel umModel = uMController.GetUMById(AuditUser.Id);
+                txtCode.Text = umModel.Code;
+                txtDescription.Text = umModel.Description;
             }
         }
     }

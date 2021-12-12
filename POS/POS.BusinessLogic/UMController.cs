@@ -17,6 +17,24 @@ namespace POS.BusinessLogic
         {
             uMDataController = new UMDataController();
         }
+
+        public bool DeleteUMById(string Id)
+        {
+            try
+            {
+                uMDataController.DeleteUserById(Id);
+                return true;
+            }catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public UMModel GetUMById(string Id)
+        {
+            return uMDataController.GetUMById(Id);
+        }
+
         public UMModelCollections getUMList()
         {
             return uMDataController.GetUMList();
@@ -26,6 +44,19 @@ namespace POS.BusinessLogic
         {
             if(uMDataController.SaveUM(um)) return true;
             else return false;
+        }
+
+        public bool UpdateUM(UMModel um)
+        {
+            try
+            {
+                uMDataController.UpdateUM(um);   
+                return true;
+            }catch (Exception ex)
+            {
+                throw ex;
+            }
+            return false;
         }
     }
 }
