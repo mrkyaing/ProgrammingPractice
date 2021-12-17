@@ -70,7 +70,12 @@
       "ProjectGuid": "80127222-203c-4aae-a85e-c96756dde30c",
       "DisplayName": "HelloWorldGUI",
       "ColorIndex": 12
+    },
+    "c9eb4c7d-18a3-4091-a66e-e730f844447c": {
+      "ProjectGuid": "c9eb4c7d-18a3-4091-a66e-e730f844447c",
+      "DisplayName": "LibraryManagementSystem",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 13
+  "NextColorIndex": 14
 }
