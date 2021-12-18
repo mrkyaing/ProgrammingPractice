@@ -17,7 +17,9 @@ namespace LibraryManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginUI());
+            //which UI do you want to start when program start ?           
+            LoginUI loginui=new LoginUI();//create the object 
+            Application.Run(loginui);
         }
     }
 }

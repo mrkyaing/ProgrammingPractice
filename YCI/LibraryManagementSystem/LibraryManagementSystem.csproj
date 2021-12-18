@@ -48,8 +48,11 @@
   <ItemGroup>
     <Compile Include="DAO\AuthorService.cs" />
     <Compile Include="DAO\IAuthorDAO.cs" />
+    <Compile Include="DAO\IUserDAO.cs" />
+    <Compile Include="DAO\UserService.cs" />
     <Compile Include="Models\AuthorModel.cs" />
     <Compile Include="Models\BookModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\AuthorUI.cs">
