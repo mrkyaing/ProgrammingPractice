@@ -1,0 +1,12 @@
+E:\LearnProgramming\YCI\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
+E:\LearnProgramming\YCI\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe
+E:\LearnProgramming\YCI\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.AssemblyReference.cache
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.SuggestedBindingRedirects.cache
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.UI.DashboardUI.resources
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.UI.LoginUI.resources
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.cache
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CoreCompileInputs.cache
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb

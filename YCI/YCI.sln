@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO.NETDemo", "ADO.NETDemo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldGUI", "HelloWorldGUI\HelloWorldGUI.csproj", "{80127222-203C-4AAE-A85E-C96756DDE30C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem", "LibraryManagementSystem\LibraryManagementSystem.csproj", "{C9EB4C7D-18A3-4091-A66E-E730F844447C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{80127222-203C-4AAE-A85E-C96756DDE30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80127222-203C-4AAE-A85E-C96756DDE30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80127222-203C-4AAE-A85E-C96756DDE30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9EB4C7D-18A3-4091-A66E-E730F844447C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9EB4C7D-18A3-4091-A66E-E730F844447C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9EB4C7D-18A3-4091-A66E-E730F844447C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9EB4C7D-18A3-4091-A66E-E730F844447C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

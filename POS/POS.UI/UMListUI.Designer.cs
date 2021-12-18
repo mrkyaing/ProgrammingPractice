@@ -43,6 +43,9 @@
             // 
             this.umGridview.AllowUserToAddRows = false;
             this.umGridview.AllowUserToDeleteRows = false;
+            this.umGridview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.umGridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.umGridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -52,7 +55,6 @@
             this.CreatedUser,
             this.Edit,
             this.Delete});
-            this.umGridview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.umGridview.Location = new System.Drawing.Point(0, 0);
             this.umGridview.Name = "umGridview";
             this.umGridview.ReadOnly = true;
