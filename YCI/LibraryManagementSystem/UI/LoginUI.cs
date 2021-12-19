@@ -48,5 +48,10 @@ namespace LibraryManagementSystem.UI
                 dashboardUI.Show();              
             }
         }
+
+        private void LoginUI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

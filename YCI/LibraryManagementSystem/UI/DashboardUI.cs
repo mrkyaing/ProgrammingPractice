@@ -18,64 +18,12 @@ namespace LibraryManagementSystem.UI
         {
             InitializeComponent();
         }
-
-        private void ShowNewForm(object sender, EventArgs e)
-        {
-            Form childForm = new Form();
-            childForm.MdiParent = this;
-            childForm.Text = "Window " + childFormNumber++;
-            childForm.Show();
-        }
-
-        private void OpenFile(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = openFileDialog.FileName;
-            }
-        }
-
-        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = saveFileDialog.FileName;
-            }
-        }
-
+       
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void CutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
-
+      
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LayoutMdi(MdiLayout.Cascade);
@@ -102,6 +50,35 @@ namespace LibraryManagementSystem.UI
             {
                 childForm.Close();
             }
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //result object will get (Yes or No) data 
+           DialogResult result= MessageBox.Show("are you sure to loguot?", "Logout",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+           //if you choose Yes, will go to Login 
+            if(result==DialogResult.Yes)
+            {
+                this.Hide();
+                LoginUI loginUI = new LoginUI();
+                loginUI.Show();
+            }                      
+        }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserUI userUI=new UserUI();
+            //userUI window form is child of MdiParent
+            userUI.MdiParent = this;
+            userUI.Show();
+        }
+
+        private void listToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserListUI userListUI=new UserListUI();
+            //userListUI window form is child of MdiParent
+            userListUI.MdiParent= this;
+            userListUI.Show();
         }
     }
 }

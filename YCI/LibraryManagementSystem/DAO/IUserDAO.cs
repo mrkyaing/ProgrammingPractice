@@ -10,5 +10,7 @@ namespace LibraryManagementSystem.DAO
     public interface IUserDAO
     {
       UserModel GetUserListByUserNameAndPassword(string UserName, string Password);
+      List<UserModel>  GetUserList();
+     void SaveUser(UserModel user);
     }
 }
