@@ -42,7 +42,8 @@ namespace POS.BusinessLogic
 
         public UserModel LoginUser(UserModel userModel)
         {
-           return userDataController.GetUserByUserNameAndPassword(userModel.UserName,userModel.Password);
+           // string password=  EncryptionUtility.DecryptCipherTextToPlainText(userModel.Password, "posadmin@123");
+            return userDataController.GetUserByUserNameAndPassword(userModel.UserName,userModel.Password);
         }
 
         public bool SaveUser(UserModel userModel)

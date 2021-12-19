@@ -16,9 +16,6 @@ namespace POS.Utilities
         public DateTime UpdatedDate { get; set; }
         //The below property will  not be visible in Datagridview or in properties window
         [Browsable(false)]
-        public string DeletedUserId { get; set; }
-        //The below property will  not be visible in Datagridview or in properties window
-        [Browsable(false)]
         public byte[] Vesion { get; set; }
     }
 }

@@ -40,3 +40,5 @@ E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UserListUI.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.LoginUI.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UMUI.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UMListUI.resources
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.ProductUI.resources
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.ProductListUI.resources

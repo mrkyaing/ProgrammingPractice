@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelCollections\ProductModelCollections.cs" />
     <Compile Include="ModelCollections\UMModelCollections.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\SQLModel.cs" />
     <Compile Include="Models\UMModel.cs" />
