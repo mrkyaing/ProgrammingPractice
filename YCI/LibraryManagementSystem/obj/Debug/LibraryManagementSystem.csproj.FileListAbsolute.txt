@@ -10,3 +10,5 @@ E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSyste
 E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CoreCompileInputs.cache
 E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
 E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.UI.UserListUI.resources
+E:\LearnProgramming\YCI\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.UI.UserUI.resources
