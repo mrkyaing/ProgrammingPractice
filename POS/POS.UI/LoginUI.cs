@@ -27,20 +27,24 @@ namespace POS.UI
             UserModel user = new UserModel()
             {
                 UserName =txtUserName.Text,
-                Password =txtPassword.Text,
+                Password =EncryptionUtility.EncryptPlainTextToCipherText( txtPassword.Text, "posadmin@123"),//zip
             };
             UserModel dbuser=userController.LoginUser(user);
+         
             if (string.IsNullOrEmpty(dbuser.UserName))
             {
                 MessageBox.Show("User Name or Password is incorrect", "Invalid User", MessageBoxButtons.OK,MessageBoxIcon.Information);     
             }
             else
             {
-                this.Hide();
-                AuditUser.UserId = dbuser.Id;
-                AuditUser.UserName = dbuser.UserName;
-                DashboardUI dashboardUI = new DashboardUI();
-                dashboardUI.Show();               
+                
+               
+                    this.Hide();
+                    AuditUser.UserId = dbuser.Id;
+                    AuditUser.UserName = dbuser.UserName;
+                    DashboardUI dashboardUI = new DashboardUI();
+                    dashboardUI.Show();
+                    
             }
         }
 

@@ -137,5 +137,19 @@ namespace POS.UI
         {
             Application.Exit();
         }
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProductUI ui = new ProductUI();
+            ui.MdiParent = this;
+            ui.Show();
+        }
+
+        private void listToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProductListUI ui = new ProductListUI();
+            ui.MdiParent = this;
+            ui.Show();
+        }
     }
 }

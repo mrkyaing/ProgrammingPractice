@@ -40,7 +40,7 @@ namespace POS.UI
             {
                 Id=Guid.NewGuid().ToString(),
                 UserName = txtUserName.Text,
-                Password = txtPasswrod.Text,
+                Password = EncryptionUtility.EncryptPlainTextToCipherText(txtPasswrod.Text,"posadmin@123"),
                 Email = txtEmail.Text
             };
             if (btnSave.Text == "Update")
