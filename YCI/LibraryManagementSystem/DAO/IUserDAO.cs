@@ -12,5 +12,9 @@ namespace LibraryManagementSystem.DAO
       UserModel GetUserListByUserNameAndPassword(string UserName, string Password);
       List<UserModel>  GetUserList();
      void SaveUser(UserModel user);
+     bool DeleteUser(string Id);
+
+        UserModel GetUserById(string Id);
+        bool UpdateUser(UserModel user);
     }
 }
