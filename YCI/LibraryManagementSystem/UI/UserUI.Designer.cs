@@ -203,6 +203,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "UserUI";
             this.Text = "UserUI";
+            this.Load += new System.EventHandler(this.UserUI_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
