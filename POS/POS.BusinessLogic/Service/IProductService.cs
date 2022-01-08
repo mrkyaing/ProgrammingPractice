@@ -12,5 +12,6 @@ namespace POS.BusinessLogic.Service
     {
         ProductModelCollections GetProductList();
         bool SaveProduct(ProductModel proudctModel);
+        string SaveProduct(ProductModelCollections productModels);
     }
 }

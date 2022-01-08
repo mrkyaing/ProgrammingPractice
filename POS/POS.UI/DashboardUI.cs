@@ -151,5 +151,12 @@ namespace POS.UI
             ui.MdiParent = this;
             ui.Show();
         }
+
+        private void excelUploadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExcelUploadUI ui = new ExcelUploadUI();
+            ui.MdiParent = this;
+            ui.Show();
+        }
     }
 }

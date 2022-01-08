@@ -42,3 +42,11 @@ E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UMUI.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UMListUI.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.ProductUI.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.ProductListUI.resources
+E:\LearnProgramming\POS\POS.UI\bin\Debug\ClosedXML.dll
+E:\LearnProgramming\POS\POS.UI\bin\Debug\DocumentFormat.OpenXml.dll
+E:\LearnProgramming\POS\POS.UI\bin\Debug\ExcelNumberFormat.dll
+E:\LearnProgramming\POS\POS.UI\bin\Debug\ClosedXML.pdb
+E:\LearnProgramming\POS\POS.UI\bin\Debug\ClosedXML.xml
+E:\LearnProgramming\POS\POS.UI\bin\Debug\DocumentFormat.OpenXml.xml
+E:\LearnProgramming\POS\POS.UI\bin\Debug\ExcelNumberFormat.xml
+E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.ExcelUploadUI.resources

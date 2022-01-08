@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net40\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +53,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DashboardUI.cs">
@@ -51,6 +61,12 @@
     </Compile>
     <Compile Include="DashboardUI.Designer.cs">
       <DependentUpon>DashboardUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelUploadUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcelUploadUI.Designer.cs">
+      <DependentUpon>ExcelUploadUI.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginUI.cs">
       <SubType>Form</SubType>
@@ -99,6 +115,9 @@
     <EmbeddedResource Include="DashboardUI.resx">
       <DependentUpon>DashboardUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExcelUploadUI.resx">
+      <DependentUpon>ExcelUploadUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +148,7 @@
     <EmbeddedResource Include="UserUI.resx">
       <DependentUpon>UserUI.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
