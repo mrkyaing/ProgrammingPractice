@@ -33,5 +33,29 @@ namespace POS.BusinessLogic
                 return false;
             }
         }
+
+        public string SaveProduct(ProductModelCollections productModels)
+        {
+            try
+            {
+                foreach (var productModel in productModels)
+                {
+                    var productExists = productDataController.GetProductList().Where(x => x.Code.Equals(productModel.Code));
+                    if (productExists.Any())
+                    {
+                        return $"{productExists.FirstOrDefault().Code} prodcut already exists";
+                    }
+                    else
+                    {
+                        productDataController.SaveProduct(productModel);
+                    }
+                }
+                return "save success";
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }
