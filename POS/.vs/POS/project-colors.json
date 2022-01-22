@@ -30,7 +30,12 @@
       "ProjectGuid": "81f5763a-1c09-4dc6-bec5-92500f17efbd",
       "DisplayName": "POS.Utilities",
       "ColorIndex": 4
+    },
+    "cd9785cb-5505-4011-8c13-8be13da9e9e2": {
+      "ProjectGuid": "cd9785cb-5505-4011-8c13-8be13da9e9e2",
+      "DisplayName": "SimpleMVCProject",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }
