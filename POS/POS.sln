@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.UI", "POS.UI\POS.UI.csproj", "{FFE25532-3F7A-4D80-88DF-8CAB29796DC1}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Models", "POS.Models\POS.Models.csproj", "{C3D5A28E-A83E-4B45-BECD-DF87A126A94C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Utilities", "POS.Utilities\POS.Utilities.csproj", "{81F5763A-1C09-4DC6-BEC5-92500F17EFBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMVCProject", "SimpleMVCProject\SimpleMVCProject.csproj", "{CD9785CB-5505-4011-8C13-8BE13DA9E9E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +41,15 @@ Global
 		{81F5763A-1C09-4DC6-BEC5-92500F17EFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81F5763A-1C09-4DC6-BEC5-92500F17EFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81F5763A-1C09-4DC6-BEC5-92500F17EFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD9785CB-5505-4011-8C13-8BE13DA9E9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD9785CB-5505-4011-8C13-8BE13DA9E9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD9785CB-5505-4011-8C13-8BE13DA9E9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD9785CB-5505-4011-8C13-8BE13DA9E9E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEF9CEFB-9ADD-40F7-AC7B-E882F358838D}
 	EndGlobalSection
 EndGlobal
