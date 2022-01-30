@@ -1,0 +1,37 @@
+﻿@using SimpleMVCProject.Models;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <div>
+        @{
+            var product = (ProductModel)ViewData["ProductData"];
+        }
+        <h3>This is Product Information here (from ViewData)</h3>
+        <table border="1">
+            <tr>
+                <td>Product Id</td>
+                <td>@product.ProductId</td>
+            </tr>
+            <tr>
+                <td>Product Name</td>
+                <td>@product.ProductName</td>
+            </tr>
+            <tr>
+                <td>Product UnitPrice</td>
+                <td>@product.UintPrice</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/Product/Create">Create</a></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

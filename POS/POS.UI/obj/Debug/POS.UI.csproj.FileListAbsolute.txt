@@ -27,7 +27,6 @@ E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.Models.pdb
 E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.Utilities.pdb
 E:\LearnProgramming\POS\POS.UI\bin\Debug\POS.DAL.pdb
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.csproj.AssemblyReference.cache
-E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.csproj.SuggestedBindingRedirects.cache
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.Properties.Resources.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.UserUI.resources
 E:\LearnProgramming\POS\POS.UI\obj\Debug\POS.UI.csproj.GenerateResource.cache

@@ -19,6 +19,5 @@ E:\LearnProgramming\POS\POS.BusinessLogic\bin\Debug\POS.Models.pdb
 E:\LearnProgramming\POS\POS.BusinessLogic\bin\Debug\POS.Utilities.pdb
 E:\LearnProgramming\POS\POS.BusinessLogic\obj\Debug\POS.BusinessLogic.csproj.AssemblyReference.cache
 E:\LearnProgramming\POS\POS.BusinessLogic\obj\Debug\POS.BusinessLogic.csproj.CoreCompileInputs.cache
-E:\LearnProgramming\POS\POS.BusinessLogic\obj\Debug\POS.BusinessLogic.csproj.CopyComplete
 E:\LearnProgramming\POS\POS.BusinessLogic\obj\Debug\POS.BusinessLogic.dll
 E:\LearnProgramming\POS\POS.BusinessLogic\obj\Debug\POS.BusinessLogic.pdb

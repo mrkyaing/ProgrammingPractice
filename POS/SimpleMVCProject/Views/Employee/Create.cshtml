@@ -1,0 +1,46 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div>
+        <form action="/Employee/Create" method="post">
+            <table>
+                <tr>
+                    <td>Employee Id:</td>
+                    <td><input type="text" name="EmployeeId" required></td>
+                </tr>
+                <tr>
+                    <td>FristName :</td>
+                    <td><input type="text" name="FristName" required></td>
+                </tr>
+                <tr>
+                    <td>LastName:</td>
+                    <td><input type="text" name="LastName" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="Gender" value="male" required>Male
+                        <input type="radio" name="Gender" value="female" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Create">
+                        <a href="/Employee/GetAll">List</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Result is : @ViewBag.Message</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
