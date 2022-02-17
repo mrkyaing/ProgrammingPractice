@@ -32,3 +32,4 @@ E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.csproj.CoreC
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.dll
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.pdb
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.csproj.AssemblyReference.cache
+E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.csproj.CopyComplete

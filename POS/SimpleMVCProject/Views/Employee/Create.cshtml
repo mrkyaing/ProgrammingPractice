@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -10,22 +9,83 @@
         <form action="/Employee/Create" method="post">
             <table>
                 <tr>
-                    <td>Employee Id:</td>
-                    <td><input type="text" name="EmployeeId" required></td>
-                </tr>
-                <tr>
-                    <td>FristName :</td>
-                    <td><input type="text" name="FristName" required></td>
-                </tr>
-                <tr>
-                    <td>LastName:</td>
-                    <td><input type="text" name="LastName" required></td>
-                </tr>
-                <tr>
-                    <td>Gender:</td>
                     <td>
-                        <input type="radio" name="Gender" value="male" required>Male
-                        <input type="radio" name="Gender" value="female" required>Female
+                        <table>
+                            <tr>
+                                <td>Employee Id:</td>
+                                <td><input type="text" name="EmployeeId" required></td>
+                            </tr>
+                            <tr>
+                                <td>FristName :</td>
+                                <td><input type="text" name="FristName" required></td>
+                            </tr>
+                            <tr>
+                                <td>LastName:</td>
+                                <td><input type="text" name="LastName" required></td>
+                            </tr>
+                            <tr>
+                                <td>Gender:</td>
+                                <td>
+                                    <input type="radio" name="Gender" value="male" checked required>Male
+                                    <input type="radio" name="Gender" value="female" required>Female
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Country:</td>
+                                <td><input type="text" name="HomeAddress.Country" required></td>
+                            </tr>
+                            <tr>
+                                <td>City:</td>
+                                <td><input type="text" name="HomeAddress.City" required></td>
+                            </tr>
+                            <tr>
+                                <td>Township:</td>
+                                <td><input type="text" name="HomeAddress.Township" required></td>
+                            </tr>
+                            <tr>
+                                <td>Street:</td>
+                                <td><input type="text" name="HomeAddress.Street" required></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Employee Id:</td>
+                                <td><input type="text" name="EmployeeId" required></td>
+                            </tr>
+                            <tr>
+                                <td>FristName :</td>
+                                <td><input type="text" name="FristName" required></td>
+                            </tr>
+                            <tr>
+                                <td>LastName:</td>
+                                <td><input type="text" name="LastName" required></td>
+                            </tr>
+                            <tr>
+                                <td>Gender:</td>
+                                <td>
+                                    <input type="radio" name="Gender" value="male" checked required>Male
+                                    <input type="radio" name="Gender" value="female" required>Female
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Country:</td>
+                                <td><input type="text" name="HomeAddress.Country" required></td>
+                            </tr>
+                            <tr>
+                                <td>City:</td>
+                                <td><input type="text" name="HomeAddress.City" required></td>
+                            </tr>
+                            <tr>
+                                <td>Township:</td>
+                                <td><input type="text" name="HomeAddress.Township" required></td>
+                            </tr>
+                            <tr>
+                                <td>Street:</td>
+                                <td><input type="text" name="HomeAddress.Street" required></td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
                 <tr>
