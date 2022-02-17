@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Convertor";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Currency Change</title>
+    <script>
+        function fillOnLoadControls() {
+            if(@ViewBag.CurrencyResult !="")
+            {
+                document.getElementById("choosecurrency").value = "@ViewBag.selectedCurrency";
+            }
+             if(@ViewBag.Amount != "0")
+             {
+                 document.getElementById("numAmount").value = "@ViewBag.Amount";
+             }
+        }
+    </script>
+</head>
+<body onload="fillOnLoadControls();">
+    <div>
+        <form action="/Convertor/Index" method="post">
+            <fieldset style="width:fit-content">
+                <legend>Currency Convertor</legend>
+                <table>
+                    <tr>
+                        <td>Choose Currency</td>
+                        <td>
+                            <select id="choosecurrency" onchange="ChangeCurrency();" name="selectOneCurrency">
+                                <option value="">Select Currency</option>
+                                <option value="USD">USD Dollor </option>
+                                <option value="SGD">Singapore Dollor </option>
+                                <option value="BAHT">Thai baht</option>
+                                <option value="AUD">Australian Dollar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amount :</td>
+                        <td><input type="number" name="txtAmount" id="numAmount" /></td>
+                    </tr>
+                    <tr>
+                        <td>Result in MMK</td>
+                        <td><input type="text" value="@ViewBag.CurrencyResult" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Convert" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
