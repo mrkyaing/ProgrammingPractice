@@ -21,13 +21,17 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li> @Html.ActionLink("Dashboard", "Index", "Home")</li>
-                    <li> @Html.ActionLink("about us ", "Index", "aboutus")</li>
-                    <li><a href="/Convertor/Index">Convertor</a></li>
+                    <li>@Html.ActionLink("Dashboard", "Index", "Home")</li>
+                    <li>@Html.ActionLink("about us ", "Index", "aboutus")</li>
+                    <li>@Html.ActionLink("Convertor", "Index", "Convertor")</li>
+                    <li>@Html.ActionLink("Employee", "GetAll", "Employee")</li>
+                    <li>@Html.ActionLink("Student", "Entry", "Student")</li>
+                    <li>@Html.ActionLink("Student List", "List", "Student")</li>
                 </ul>
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -35,6 +39,7 @@
             <p>&copy; @DateTime.Now.Year - POS</p>
         </footer>
     </div>
+
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
