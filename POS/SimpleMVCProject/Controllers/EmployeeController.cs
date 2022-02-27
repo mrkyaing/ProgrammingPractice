@@ -24,7 +24,6 @@ namespace SimpleMVCProject.Controllers
             ViewBag.Message = $"{EmployeeId.Count} record(s) was submitted from view.";
             return View();
         }
-
         public ActionResult CreateMultiEmployee(IList<EmployeeModel> employeeModels)
         {
             return View();

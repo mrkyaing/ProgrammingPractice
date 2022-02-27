@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Entry";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<h2>Entry</h2>
+<form action="/Student/Entry" method="post">
+    <table>
+        <tr>
+            <td>No</td>
+            <td><input type="text" name="No" required class="form-control"/> </td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="Name" class="form-control"/> </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="Email" class="form-control"/> </td>
+        </tr>
+        <tr>
+            <td>Date Of Birth</td>
+            <td><input type="text" name="DOB" class="form-control"/> </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="Address" class="form-control"/> </td>
+        </tr>
+        <tr>
+            <td>Father Name</td>
+            <td><input type="text" name="FatherName" class="form-control"/> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Save" class="btn btn-default"/> </td>
+            @if (@ViewBag.result != "")
+            {
+                @ViewBag.result;
+            }
+        </tr>
+    </table>
+</form>

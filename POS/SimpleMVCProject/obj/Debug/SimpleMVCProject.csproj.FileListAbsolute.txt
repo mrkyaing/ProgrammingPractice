@@ -33,3 +33,10 @@ E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.dll
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.pdb
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.csproj.AssemblyReference.cache
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.csproj.CopyComplete
+E:\LearnProgramming\POS\SimpleMVCProject\bin\EntityFramework.dll
+E:\LearnProgramming\POS\SimpleMVCProject\bin\EntityFramework.SqlServer.dll
+E:\LearnProgramming\POS\SimpleMVCProject\bin\EntityFramework.xml
+E:\LearnProgramming\POS\SimpleMVCProject\bin\EntityFramework.SqlServer.xml
+E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.Migrations.initialCreatedb.resources
+E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.csproj.GenerateResource.cache
+E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.Migrations.addnewcolumninStudentmodel.resources
