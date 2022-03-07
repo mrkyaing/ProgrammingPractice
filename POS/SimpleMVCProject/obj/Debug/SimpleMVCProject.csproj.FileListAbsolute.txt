@@ -40,3 +40,4 @@ E:\LearnProgramming\POS\SimpleMVCProject\bin\EntityFramework.SqlServer.xml
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.Migrations.initialCreatedb.resources
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.csproj.GenerateResource.cache
 E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.Migrations.addnewcolumninStudentmodel.resources
+E:\LearnProgramming\POS\SimpleMVCProject\obj\Debug\SimpleMVCProject.Migrations.addcitymodel.resources

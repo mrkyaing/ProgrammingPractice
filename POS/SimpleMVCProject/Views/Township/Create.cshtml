@@ -1,0 +1,30 @@
+﻿@Model List<SimpleMVCProject.ViewModels>
+    @{
+        ViewBag.Title = "Create";
+        Layout = "~/Views/Shared/MasterLayout.cshtml";
+    }
+
+    <h2>Create</h2>
+    <form action="/Township/Create" method="post">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="Name" /> </td>
+            </tr>
+            <tr>
+                <td>ZipCode</td>
+                <td><input type="text" name="ZipCode" /> </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <select name="CityId">
+                        @foreach (var item in Model)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
