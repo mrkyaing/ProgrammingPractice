@@ -6,14 +6,14 @@ namespace SimpleMVCProject.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.0.0-20911")]
-    public sealed partial class addnewcolumninStudentmodel : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
+    public sealed partial class addTownshipModel : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addnewcolumninStudentmodel));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addTownshipModel));
         
         string IMigrationMetadata.Id
         {
-            get { return "202202201104191_addnewcolumninStudentmodel"; }
+            get { return "202203250910523_addTownshipModel"; }
         }
         
         string IMigrationMetadata.Source

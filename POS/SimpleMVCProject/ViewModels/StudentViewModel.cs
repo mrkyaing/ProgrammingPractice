@@ -14,5 +14,10 @@ namespace SimpleMVCProject.ViewModels
         public DateTime DOB { get; set; }
         public string Address { get; set; }
         public string FatherName { get; set; }
+
+        public List<StudentViewModel> GetDataSource()
+        {
+            return new List<StudentViewModel>();
+        }
     }
 }

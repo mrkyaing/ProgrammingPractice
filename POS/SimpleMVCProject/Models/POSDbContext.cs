@@ -12,13 +12,15 @@ namespace SimpleMVCProject.Models
         {
             Database.SetInitializer<POSDbContext>(null);
         }
-        //
         public DbSet<StudentModel> Students { get; set; }
-
+        public DbSet<CityModel> Cities { get; set; }
+        public DbSet<TownshipModel> Townships { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<StudentModel>().ToTable("Student");
+            modelBuilder.Entity<CityModel>().ToTable("City");
+            modelBuilder.Entity<TownshipModel>().ToTable("Township");
         }
     }
 }

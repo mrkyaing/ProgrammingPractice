@@ -25,13 +25,31 @@
                     <li>@Html.ActionLink("about us ", "Index", "aboutus")</li>
                     <li>@Html.ActionLink("Convertor", "Index", "Convertor")</li>
                     <li>@Html.ActionLink("Employee", "GetAll", "Employee")</li>
-                    <li>@Html.ActionLink("Student", "Entry", "Student")</li>
-                    <li>@Html.ActionLink("Student List", "List", "Student")</li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">Student <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Entry", "Entry", "Student")</li>
+                            <li>@Html.ActionLink("List", "List", "Student")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">City <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Entry", "Create", "City")</li>
+                            <li>@Html.ActionLink("List", "List", "City")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">Township <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Entry", "Create", "Township")</li>
+                            <li>@Html.ActionLink("List", "List", "Township")</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-
     <div class="container body-content">
         @RenderBody()
         <hr />
