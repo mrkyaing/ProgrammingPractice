@@ -10,7 +10,7 @@ namespace SimpleMVCProject.Controllers
 {
     public class StudentController : Controller
     {
-        private POSDbContext pOSDbContext;
+        private readonly POSDbContext pOSDbContext;
 
         public StudentController()
         {

@@ -55,6 +55,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -99,9 +101,28 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DataModel\NorthWindDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NorthWindDataModel.edmx</DependentUpon>
+      <LastGenOutput>NorthWindDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataModel\NorthWindDataModel.edmx.sql" />
+    <Content Include="DataModel\NorthWindDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NorthWindDataModel.edmx</DependentUpon>
+      <LastGenOutput>NorthWindDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Global.asax" />
+    <Content Include="Reports\viewer\StudentDetailReportViewer.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="DataModel\NorthWindDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NorthWindDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataModel\NorthWindDataModel.edmx.diagram">
+      <DependentUpon>NorthWindDataModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -119,20 +140,54 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TownshipController.cs" />
+    <Compile Include="DataModel\Category.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Customer.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Employee.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\NorthWindDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthWindDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\NorthWindDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\NorthWindDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthWindDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Order.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\OrderDetail.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Product.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Shipper.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Supplier.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\UnitOfMeasurement.cs">
+      <DependentUpon>NorthWindDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202202201020034_initialCreatedb.cs" />
-    <Compile Include="Migrations\202202201020034_initialCreatedb.Designer.cs">
-      <DependentUpon>202202201020034_initialCreatedb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202202201104191_addnewcolumninStudentmodel.cs" />
-    <Compile Include="Migrations\202202201104191_addnewcolumninStudentmodel.Designer.cs">
-      <DependentUpon>202202201104191_addnewcolumninStudentmodel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202203061013238_addcitymodel.cs" />
-    <Compile Include="Migrations\202203061013238_addcitymodel.Designer.cs">
-      <DependentUpon>202203061013238_addcitymodel.cs</DependentUpon>
+    <Compile Include="Migrations\202203250910523_addTownshipModel.cs" />
+    <Compile Include="Migrations\202203250910523_addTownshipModel.Designer.cs">
+      <DependentUpon>202203250910523_addTownshipModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AddressModel.cs" />
@@ -143,6 +198,13 @@
     <Compile Include="Models\StudentModel.cs" />
     <Compile Include="Models\TownshipModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\viewer\StudentDetailReportViewer.aspx.cs">
+      <DependentUpon>StudentDetailReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\viewer\StudentDetailReportViewer.aspx.designer.cs">
+      <DependentUpon>StudentDetailReportViewer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\CityViewModel.cs" />
     <Compile Include="ViewModels\StudentViewModel.cs" />
     <Compile Include="ViewModels\TownshipViewModel.cs" />
@@ -169,6 +231,8 @@
     <Content Include="Views\Student\Edit.cshtml" />
     <Content Include="Views\City\Create.cshtml" />
     <Content Include="Views\Township\Create.cshtml" />
+    <Content Include="Views\Township\List.cshtml" />
+    <Content Include="Views\City\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,17 +242,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Reports\rdlc\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202202201020034_initialCreatedb.resx">
-      <DependentUpon>202202201020034_initialCreatedb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202203250910523_addTownshipModel.resx">
+      <DependentUpon>202203250910523_addTownshipModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202201104191_addnewcolumninStudentmodel.resx">
-      <DependentUpon>202202201104191_addnewcolumninStudentmodel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202203061013238_addcitymodel.resx">
-      <DependentUpon>202203061013238_addcitymodel.cs</DependentUpon>
-    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,29 @@
+﻿@Model List<TownshipViewModel>
+    @{
+        ViewBag.Title = "List";
+        Layout = "~/Views/Shared/MasterLayout.cshtml";
+    }
+    <h2>Township List</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Township Name</td>
+                <td>City</td>
+                <td>ZipCode</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (TownshipViewModel item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.CityName</td>
+                    <td>@item.ZipCode</td>
+                    <td><a href="/Township/Edit?TownshipId=@item.Id">Edit</a></td>
+                    <td><a href="/Township/Delete?TownshipId=@item.Id" onclick="return confirm('Are you sure you want to do this record?');">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>

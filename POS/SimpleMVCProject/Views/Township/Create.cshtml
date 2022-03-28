@@ -1,9 +1,8 @@
-﻿@Model List<SimpleMVCProject.ViewModels>
+﻿@Model List<TownshipViewModel>
     @{
         ViewBag.Title = "Create";
         Layout = "~/Views/Shared/MasterLayout.cshtml";
     }
-
     <h2>Create</h2>
     <form action="/Township/Create" method="post">
         <table>
@@ -25,6 +24,10 @@
                         }
                     </select>
                 </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Save" /></td>
             </tr>
         </table>
     </form>

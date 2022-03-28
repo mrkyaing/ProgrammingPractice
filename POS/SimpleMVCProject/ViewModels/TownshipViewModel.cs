@@ -11,5 +11,6 @@ namespace SimpleMVCProject.ViewModels
         public string Name { get; set; }
         public string ZipCode { get; set; }
         public string CityId { get; set; }
+        public string CityName { get; set; }
     }
 }

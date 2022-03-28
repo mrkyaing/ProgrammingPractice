@@ -6,19 +6,24 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-
 namespace SimpleMVCProject.Controllers
 {
     public class CityController : Controller
     {
-        private POSDbContext pOSDbContext;
+        private readonly POSDbContext pOSDbContext;
+
         public CityController()
         {
             pOSDbContext = new POSDbContext();
         }
-        public ActionResult Index()
+        public ActionResult List()
         {
-            return View();
+            List<CityViewModel> cityViewModel = pOSDbContext.Cities.Select(x => new CityViewModel
+            {
+                Id = x.Id,
+                Name = x.Name
+            }).ToList();
+            return View(cityViewModel);
         }
 
         public ActionResult Create()

@@ -16,11 +16,21 @@ namespace SimpleMVCProject.Controllers
             pOSDbContext = new POSDbContext();
         }
 
-        public ActionResult Index()
+        public ActionResult List()
         {
-            return View();
+            List<TownshipViewModel> townshipViewModels = (from t in pOSDbContext.Townships
+                                                          join c in pOSDbContext.Cities
+                                                           on t.CityId equals c.Id
+                                                          select new TownshipViewModel
+                                                          {
+                                                              Id = t.Id,
+                                                              Name = t.Name,
+                                                              ZipCode = t.ZipCode,
+                                                              CityId = t.CityId,
+                                                              CityName = c.Name
+                                                          }).ToList();
+            return View(townshipViewModels);
         }
-
         public ActionResult Create()
         {
             var cityViewModel = pOSDbContext.Cities.Select(s => new CityViewModel
@@ -33,7 +43,17 @@ namespace SimpleMVCProject.Controllers
         [HttpPost]
         public ActionResult Create(TownshipViewModel townshipViewModel)
         {
-            return View();
+            TownshipModel township = new TownshipModel()
+            {
+
+               Id=Guid.NewGuid().ToString(),
+               ZipCode=townshipViewModel.ZipCode,
+               Name=townshipViewModel.Name,
+               CityId=townshipViewModel.CityId
+            };
+            pOSDbContext.Townships.Add(township);
+            pOSDbContext.SaveChanges();
+           return RedirectToAction("List");
         }
     }
 }

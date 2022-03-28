@@ -15,6 +15,6 @@ namespace SimpleMVCProject.Models
         public string ZipCode { get; set; }
         public string CityId { get; set; }
         [ForeignKey("CityId")]
-        public virtual CityModel City { get; set; }
+        public virtual CityModel CityModel { get; set; }
     }
 }

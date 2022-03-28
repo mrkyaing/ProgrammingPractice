@@ -5,7 +5,6 @@ D:\My Training\POS\POS.Utilities\obj\Debug\POS.Utilities.dll
 D:\My Training\POS\POS.Utilities\obj\Debug\POS.Utilities.pdb
 E:\LearnProgramming\POS\POS.Utilities\bin\Debug\POS.Utilities.dll
 E:\LearnProgramming\POS\POS.Utilities\bin\Debug\POS.Utilities.pdb
-E:\LearnProgramming\POS\POS.Utilities\obj\Debug\POS.Utilities.csproj.AssemblyReference.cache
 E:\LearnProgramming\POS\POS.Utilities\obj\Debug\POS.Utilities.csproj.CoreCompileInputs.cache
 E:\LearnProgramming\POS\POS.Utilities\obj\Debug\POS.Utilities.dll
 E:\LearnProgramming\POS\POS.Utilities\obj\Debug\POS.Utilities.pdb
